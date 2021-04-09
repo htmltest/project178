@@ -1,0 +1,218 @@
+.lang-list-tr::before {content:"Tr"}
+.lang-list-de::before {content:"De"}
+.window-participant input[name=name]{display:none;}
+
+.window-online-success-back {margin:-3px 0 0 0; font-size:14px; line-height:21px; font-weight:300}
+.window-online-success-back a {display:inline-block; vertical-align:top; text-decoration:none; color:#272727; padding:0 0 0 25px; position:relative}
+.window-online-success-back a::before {content:""; display:block; position:absolute; left:0; top:50%; width:15px; height:6px; background:url(/local/templates/offline-personal/css/../images/window-online-success-back.svg) no-repeat; transition:all 0.2s; margin-top:-3px}
+.window-online-success-back a:hover::before {left:-10px; width:25px}
+.window-catalogue-info-value.window-catalogue-info-country img{height: 19px; width: 28px; top: 0px}
+.faq-item-title.faq-item-no-answer a::after {display:none;}
+.anonce-text { font-size: 18px; line-height: 27px; font-weight: normal; margin: 34px 0 33px 0;}
+
+.manager-table-cell-active-3 .manager-table-cell-active-inner::before {background: #ed3131;} 
+.manager-table-cell-delegate-comments{max-width: 50px; overflow: hidden; } /* обрезаем длинные комментарии  */
+.manager-table-cell-delegate-comments .manager-table-delegate-name { max-width: 250px; text-overflow: ellipsis; overflow: hidden;}
+
+.dashboard-zone-notmeets-title {color: #969696;}
+.dashboard-zone-notmeets-text {color: #a2a2a2; max-width: none}
+.dashboard-zone-notmeets { border: 1px solid #fbcb95;}
+
+@media screen and (min-width:1169px) {
+	/* .side:hover .side-menu ul li a { padding: 0 0 0 74px; color: rgba(0, 0, 0, 1); text-transform: uppercase; font-weight: 500; height: 45px; font-size: 12px; line-height: 45px; } /* .лк - меню меньше  */
+	/* .side-menu ul li a{line-height: 45px; height: 45px; } */
+	
+	/*.header-fixed .logo{width: 155px}  закрпленное меню - больше лого  */
+	.logo{margin: 20px 0 0 30px}
+	.header-menu{margin: 25px 0 0 34px;} /* выравнивание меню  */
+	.header-fixed .logo {width: 116px; height: 28px; margin: 18px 0 0 30px;}
+	.header-fixed .header-menu{margin: 16px 0 0 34px;}
+	
+	.dashboard-zone-success-info {max-width: 615px} /* Правка по ширине блока с информацией о зоне */
+	
+	.side-menu-icon img {max-width: 20px} /* Ограничение размеров иконок в меню */
+	.breadcrumbs span {height: 14px} /* .разделители в хлебных крошках выше  */
+	.b-place-footer-close {display:block; width:23px; height:23px; position:absolute; right:10px; top:5px; background-color:#fb020291; border-radius:50%} /* красный кружок на баннере-перетяжке */
+	.b-place-footer-close:hover {opacity:0.8}
+	.window-catalogue-logo img{height: 70px} /* высота заглушки  */
+	
+	.manager-table-head a{color: #ccab25; text-decoration: none} /* стили для сортировки */
+	.manager-table-head .arrow{margin-top: -1px; font-size: 12px; line-height: 12px}
+	.manager-table-head a:hover{text-decoration: underline;color: #ccab25;}
+	
+	.lkm-exponent-add-exponent-text .manager-table-participant-text span {margin-top: -20px}
+	.lkm-visitor-add-visitor-info { z-index: 1000 }
+	/* .manager-table-participant-text > span {margin-right: 10px;} попап выбора экспонента - отступ от брендов */
+	/* .lkm-exponent-add-exponent-category img {height: 15px;} попап выбора экспонента - размер иконок категорий */
+	.manager-table-cell-logo img{max-height: 40px} /* размер лого экспонента в таблице */
+	.manager-table-support-answer {font-size: 13px} /* размер шрифта для лейбла "непрочитано" */
+	.manager-table-section-icon {display: block}
+	.status-form .form-radio span {padding-left: 54px;} /* для попапа модерации*/
+	.status-radio {width: 15px; height: 24px; position: absolute; left: 29px; top: 0px}
+
+	.window-card-info{margin: 57px 0 0 0} /* Отступы в попапе для данных экспонентов / представителей */
+	.window-card-info .meet-card-data-header h2{margin: 0}	
+	
+	.dashboard-zone-item-where-time + .dashboard-zone-item-where-time {margin-top: 10px; font-size: 15px; color: #666;}
+	
+	/* список рекомендованных фабрик на странице встреч */
+	.catalogue-recommend {margin:6px 0 0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
+	.catalogue-recommend-title {display:inline-block; vertical-align:top; height:34px; font-size:16px; line-height:34px; letter-spacing:0; color:#403f3f; margin:10px 4px 0 10px}
+	.catalogue-recommend-item {display:inline-block; vertical-align:top; height:34px; font-size:16px; line-height:32px; letter-spacing:0; margin:10px 0 0 10px; color:#000; font-weight:normal; background:rgba(41, 132, 223, 0.08); border:1px solid rgba(41, 132, 223, 0.34); padding:0 15px; text-decoration:none}
+	.catalogue-recommend-item:hover {color:#000; background:rgba(41, 132, 223, 0.16); border-color:rgba(41, 132, 223, 0.68)}
+	
+	/* ссылка на вопросы в ЛК Представителя */
+	.lk_question_link a{text-decoration: none; color: #bbb}
+	.lk_question_link a:hover{color: #888}
+	
+	/* настройки ширины полей в таблице с данными в попапе посетителя*/
+	.window-card-info-row-label{width: 200px; padding: 0}
+	.window-card-info-row-value{margin: 0 0 0 220px}
+	
+	/* настройки ширины полей в таблице в попапе посетителя*/
+	.manager-table-company-name span {max-width: 250px}
+}
+
+/* блок с информацие об интересах */
+.catalogue-info {margin:17px 0 30px 0; border:1px solid #e2e2e2; position:relative; background:#fff url(/local/templates/offline-personal/css/../images/catalogue-info.svg) no-repeat 20px 21px}
+.catalogue-info-mobile {display:none}
+.catalogue-info::before {content:""; display:block; position:absolute; left:10px; top:10px; right:-11px; bottom:-11px; background:#ecf6fb; z-index:-1}
+.catalogue-info::after {content:""; display:block; clear:both}
+.catalogue-info-text {float:left; max-width:calc(100% - 194px); padding:22px 0 25px 54px}
+.catalogue-info-text strong {font-weight:600}
+.catalogue-info-btn {float:left; padding:15px 0 15px 40px}
+.catalogue-info-btn a {display:block; width:134px; height:41px; text-align:center; background:#e63946; color:#fff; text-transform:uppercase; font-weight:normal; font-size:12px; line-height:41px; letter-spacing:0.05em; text-decoration:none}
+.catalogue-info-btn a:hover {text-decoration:none; background:#fad7da; color:#171717}
+
+@media screen and (max-width:1169px) {
+    .catalogue-info {margin:0 20px 40px 20px; background-image:none; display:none}
+    .catalogue-info-mobile {display:block}
+    .catalogue-info-text {float:none; padding:20px 20px 0 20px; max-width:none; text-align:center}
+    .catalogue-info-text strong {display:block}
+    .catalogue-info-btn {float:none; padding:20px 20px 20px 0; text-align:center}
+    .catalogue-info-btn a {display:inline-block; vertical-align:top; width:150px; height:51px; font-size:16px; line-height:51px}
+}
+
+@media screen and (max-width:1169px) {
+	/* список рекомендованных фабрик */
+    .catalogue-recommend {margin:0; padding:0 20px 0 10px}
+    .catalogue-recommend-title {display:block; font-size:20px; line-height:30px; height:auto; margin:0 0 0 10px}
+    .catalogue-recommend-item {font-size:20px; padding:0 12px; text-transform:uppercase}
+}
+
+/* Статусы встреч */
+.status-meet-1 {background:#dedede}
+.status-meet-2 {background:#fce480}
+.status-meet-3 {background:#ade491}
+.status-meet-4 {background:#ff9c9c}
+.status-meet-5 {background:#38a9db}
+.status-meet-6 {background:#ffccfa}
+
+/* Статусы карточек участия */
+.status-1 {background:#dedede}
+.status-2 {background:#fce480}
+.status-3 {background:#ffccfa}
+.status-4 {background:#38a9db}
+.status-5 {background:#ade491}
+.status-6 {background:#ff9c9c}
+.delimiter{ width: 100%; height: 1px; border-top: 1px solid #e3e3e3; } 
+
+@media screen and (max-width:1170px) {
+    .back-mobile {display:block; padding: 0px; line-height:35px; margin-top: 27px}
+    .back-mobile a {display:inline-block; vertical-align:top; color:#000; padding:0 0 0 41px; position:relative; text-decoration: none; background: none; width: auto; top: 0}
+    .back-mobile a::before {content:""; display:block; position:absolute; left:0; top:0; width:35px; height:35px; background: rgba(203, 203, 203, 0.22) 14px 11px url(/local/templates/offline-personal/css/../images/back-mobile.svg) no-repeat}
+}
+
+/* Контакты менеджеров для 404 */
+.partcipant-contacts {margin:110px auto 0 auto}
+.partcipant-contacts-header::after {content:""; display:block; clear:both}
+.partcipant-contacts-header h2 {float:left; margin:0}
+.partcipant-contacts-header-text {float:right; width:500px; margin:8px 0 0 0}
+.partcipant-contacts-list {margin:4px 0 0 0}
+
+@media screen and (max-width:1169px) {
+    .partcipant-contacts {margin:100px auto 0 auto}
+    .partcipant-contacts-header h2 {float:none}
+    .partcipant-contacts-header-text {float:none; width:auto}
+    .partcipant-contacts-list {margin:33px 0 0 0}
+}
+
+.partcipant-contacts-feedback {margin:30px 0 0 0}
+.partcipant-contacts-feedback::after {content:""; display:block; clear:both}
+.partcipant-contacts-feedback-inner {float:right; width:197px; text-align:center}
+.partcipant-contacts-feedback-inner-title {color:#313131}
+.partcipant-contacts-feedback-inner-btn {margin:13px 0 0 0}
+.partcipant-contacts-feedback-inner-btn .btn {padding:0; width:100%}
+
+@media screen and (max-width:1169px) {
+    .partcipant-contacts-feedback {margin:34px 0 0 0}
+    .partcipant-contacts-feedback-inner {float:none; width:auto; text-align:center}
+    .partcipant-contacts-feedback-inner-title {color:#838383; font-weight:normal}
+    .partcipant-contacts-feedback-inner-btn {margin:25px 0 0 0}
+}
+
+/* Для ? */
+.meet-add-confirm {display:table; width:100%}
+.meet-add-confirm-row {display:table-row}
+.meet-add-confirm-label {display:table-cell; vertical-align:top; color:#171717; width:160px; padding:13px 0; font-size: inherit; line-height: inherit}
+.meet-add-confirm-value {display:table-cell; vertical-align:top; padding:13px 0 13px 20px; font-weight:normal; font-size:18px; line-height:27px; color:#000}
+.meet-add-confirm-value-day {font-weight:300; font-size:16px; color:#171717}
+.meet-add-confirm-value-logo {vertical-align:middle; margin-right:17px; height:36px}
+.meet-add-confirm-value-icon {vertical-align:middle; margin:-2px 10px 0 0}
+
+/* Для попапов модерации */
+@media screen and (max-width:1169px) {
+    .meet-add-confirm {border-top:none}
+    .meet-add-confirm-row {border-bottom:none; padding:17px 0 0 0}
+    .meet-add-confirm-label {float:none; font-size:20px; line-height:30px}
+    .meet-add-confirm-value {float:none; width:auto; font-weight:600; font-size:20px; line-height:30px}
+    .meet-add-confirm-value img {position:relative; top:auto; right:auto; transform:none; margin:0 13px 0 0; max-width:126px; vertical-align:middle}
+}
+
+.meet-add-confirm-status {margin:4px 0 0 0; font-weight:normal; font-size:14px; line-height:19px}
+.meet-add-confirm-status-inner {display:inline-block; vertical-align:top; padding:0 10px; color:#1d1d1d; height:19px}
+
+/* Фильтры */
+.ownd-manager-support-filter {
+	width: 400px;
+}
+
+.ownd-manager-feedback-filter {
+	width: 185px;
+}
+
+.ownd-manager-support-filter .manager-table-filter-params-window-dates,
+.ownd-manager-support-filter .manager-table-filter-params-window-props,
+.ownd-manager-feedback-filter .manager-table-filter-params-window-dates{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px;
+}
+
+.ownd-manager-support-filter .manager-table-filter-params-window-props {
+	margin-top: 0;
+}
+
+.ownd-manager-support-filter .manager-table-filter-params-window-props .manager-table-filter-params-window-title {
+	margin-bottom: 11px;
+}
+
+.ownd-manager-support-filter .manager-table-filter-params-window-props .manager-table-filter-params-window-props-list {
+	margin-top: 24px;
+}
+
+.ownd-manager-support-filter select[name="member"] {
+	border: 1px solid rgba(208, 208, 208, 0.55);
+	width: 109px;
+	height: 30px;
+}
+
+.ownd-manager-support-filter .manager-table-filter-params-window-date,
+.ownd-manager-feedback-filter .manager-table-filter-params-window-date {
+	margin-top: 11px;
+}
+
+.support-messages-success-btn .btn {color: #fff}
+.delegate-card-detail h2 { border-bottom: 2px solid #f68d1e4d;}
+.meet-card-data-header { border-bottom: 2px solid #f68d1e4d;}
+.dashboard-zone-item-status {margin: 0}

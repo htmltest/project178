@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bee-Together</title>
+
+        <link rel="stylesheet" href="css/general.css" />
+        <link rel="stylesheet" href="css/cabinet.css" />
+        <link rel="stylesheet" href="css/cabinet-m.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/select2/select2.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css" />
+
+        <link rel="icon" type="image/png" href="favicon.png" />
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+                        <div class="logo"></div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li class="with-submenu active">
+                                    <a href="#">Bee-online 2020</a>
+                                    <ul>
+                                        <li><a href="#welcome" class="page-link">Об онлайн-платформе</a></li>
+                                        <li><a href="#">Видеоконференции</a></li>
+                                        <li><a href="#exhibitors" class="page-link">Для экспонентов</a></li>
+                                        <li><a href="#visitors" class="page-link">Для посетителей</a></li>
+                                        <li><a href="#">Каталог</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="with-submenu">
+                                    <a href="#">Bee-online 9</a>
+                                    <ul>
+                                        <li><a href="#">Участники</a></li>
+                                        <li><a href="#">Для посетителей</a></li>
+                                        <li><a href="#">Для участников</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Архив</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="mobile-menu-link"></a>
+
+                        <div class="header-user">
+                            <a href="windows/auth.html" class="header-user-link window-link"></a>
+                            <div class="header-user-menu">
+                                <div class="header-user-menu-header">
+                                    <div class="header-user-menu-avatar"></div>
+                                    <div class="header-user-menu-name">Александр Христорожденный</div>
+                                    <div class="header-user-menu-company">Дом моды Стиль ЛС</div>
+                                </div>
+                                <div class="header-user-menu-list">
+                                    <ul>
+                                        <li><a href="#">Профиль компании</a></li>
+                                        <li><a href="#">Профиль представителя</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-user-menu-logout"><a href="#">Выйти</a></div>
+                            </div>
+                        </div>
+
+                        <div class="header-lang">
+                            <a href="#" class="header-lang-link lang-list-ru"></a>
+                            <ul>
+                                <li class="active" data-google-lang="ru"><a href="#" class="lang-list-ru"></a></li>
+                                <li data-google-lang="en"><a href="#" class="lang-list-en"></a></li>
+                                <li data-google-lang="it"><a href="#" class="lang-list-it"></a></li>
+                                <li data-google-lang="fr"><a href="#" class="lang-list-fr"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="header-visit"><a href="windows/participant.html" class="btn btn-mini window-link"><img src="images/header-visit.svg" alt="" />Посетить</a></div>
+                    </div>
+                </header>
+
+                <!-- mobile menu -->
+                <div class="mobile-menu">
+                    <div class="mobile-menu-bg"></div>
+                    <div class="mobile-menu-container">
+                        <div class="mobile-menu-header">
+                            <div class="mobile-menu-header-user">
+                                <a href="windows/auth.html" class="mobile-menu-header-user-link window-link"></a>
+                            </div>
+
+                            <div class="mobile-menu-header-lang">
+                                <a href="#" class="mobile-menu-header-lang-link lang-list-ru"></a>
+                                <ul>
+                                    <li class="active" data-google-lang="ru"><a href="#" class="lang-list-ru"></a></li>
+                                    <li data-google-lang="en"><a href="#" class="lang-list-en"></a></li>
+                                    <li data-google-lang="it"><a href="#" class="lang-list-it"></a></li>
+                                    <li data-google-lang="fr"><a href="#" class="lang-list-fr"></a></li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="mobile-menu-close"></a>
+                        </div>
+
+                        <div class="mobile-menu-content">
+                            <div class="mobile-menu-user">
+                                <div class="mobile-menu-user-name">Александр Летуновский</div>
+                                <div class="mobile-menu-user-copmany">Дом моды Стиль ЛС</div>
+                            </div>
+                            <div class="mobile-menu-list-add">
+                                <ul>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-1.svg" alt="" /></div>Рабочий стол</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-2.svg" alt="" /></div>Профиль</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-3.svg" alt="" /><span>3</span></div>Встречи</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-4.svg" alt="" /></div>СТ: Посетители</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-5.svg" alt="" /></div>СТ: Экспоненты</a></li>
+                                    <li class="active"><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-6.svg" alt="" /></div>Компании</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-7.svg" alt="" /></div>Представители</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-8.svg" alt="" /></div>Техническая поддержка</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-9.svg" alt="" /></div>Обратная связь</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-10.svg" alt="" /></div>Расписания</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-11.svg" alt="" /></div>Вопрос</a></li>
+                                    <li><a href="#"><div class="mobile-menu-list-add-icon"><img src="images/side-menu-12.svg" alt="" /></div>Выйти</a></li>
+                                </ul>
+                            </div>
+                            <div class="mobile-menu-list">
+                                <ul>
+                                    <li class="active">
+                                        <a href="#">Bee-online 2020</a>
+                                        <ul>
+                                            <li><a href="#welcome" class="page-link">Об онлайн-платформе</a></li>
+                                            <li><a href="#">Видеоконференции</a></li>
+                                            <li><a href="#exhibitors" class="page-link">Для экспонентов</a></li>
+                                            <li><a href="#visitors" class="page-link">Для посетителей</a></li>
+                                            <li><a href="#">Каталог</a></li>
+                                            <li><a href="#">Новости</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bee-online 9</a>
+                                        <ul>
+                                            <li><a href="#">Участники</a></li>
+                                            <li><a href="#">Для посетителей</a></li>
+                                            <li><a href="#">Для участников</a></li>
+                                            <li><a href="#">Новости</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Архив</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="mobile-menu-visit"><a href="windows/participant.html" class="btn btn-mini window-link"><img src="images/mobile-menu-visit.svg" alt="" />стать экспонентом</a></div>
+                            <div class="mobile-menu-contacts">
+                                <div class="contacts-item">
+                                    <div class="contacts-item-inner">
+                                        <div class="contacts-item-content">
+                                            <div class="contacts-item-photo"><img src="files/contacts-02.jpg" alt="" /></div>
+                                            <div class="contacts-item-text">
+                                                <div class="contacts-item-name">Алёна</div>
+                                                <div class="contacts-item-phone"><a href="tel:+79299688858">+7 (929) 968-88-58</a></div>
+                                                <div class="contacts-item-email"><a href="mailto:promo@profashion.ru">promo@profashion.ru</a></div>
+                                            </div>
+                                            <div class="contacts-item-mobile">
+                                                <div class="contacts-item-mobile-inner">
+                                                    <a href="https://telegram.im/@struevvs" class="_blank"><img src="images/contacts-item-icon-1.svg" alt="" /></a>
+                                                    <a href="viber://chat?number=79255002881"><img src="images/contacts-item-icon-2.svg" alt="" /></a>
+                                                    <a href="https://wa.me/79255002881" class="_blank"><img src="images/contacts-item-icon-3.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="contacts-item-mobile-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contacts-item">
+                                    <div class="contacts-item-inner">
+                                        <div class="contacts-item-content">
+                                            <div class="contacts-item-photo"><img src="files/contacts-03.jpg" alt="" /></div>
+                                            <div class="contacts-item-text">
+                                                <div class="contacts-item-name">Юлия</div>
+                                                <div class="contacts-item-phone"><a href="tel:+79255002881">+7 (925) 500-28-81</a></div>
+                                                <div class="contacts-item-email"><a href="mailto:adv1@profashion.ru">adv1@profashion.ru</a></div>
+                                            </div>
+                                            <div class="contacts-item-mobile">
+                                                <div class="contacts-item-mobile-inner">
+                                                    <a href="https://telegram.im/@struevvs" class="_blank"><img src="images/contacts-item-icon-1.svg" alt="" /></a>
+                                                    <a href="viber://chat?number=79255002881"><img src="images/contacts-item-icon-2.svg" alt="" /></a>
+                                                    <a href="https://wa.me/79255002881" class="_blank"><img src="images/contacts-item-icon-3.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="contacts-item-mobile-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-menu-social">
+                                    <a href="#"><img src="images/social-fb.svg" alt="" /></a>
+                                    <a href="#"><img src="images/social-yt.svg" alt="" /></a>
+                                    <a href="#"><img src="images/social-vk.svg" alt="" /></a>
+                                    <a href="#"><img src="images/social-insta.svg" alt="" /></a>
+                                    <a href="#"><img src="images/social-telegram.svg" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile menu END -->
+
+                <!-- cabinet -->
+                <div class="cabinet">
+
+                    <!-- side -->
+                    <div class="side">
+                        <div class="side-menu">
+                            <ul>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-1.svg" alt="" /></div>Рабочий стол</a></li>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-2.svg" alt="" /></div>Профиль</a></li>
+                                <li class="sep"><a href="#"><div class="side-menu-icon"><img src="images/side-menu-3.svg" alt="" /></div>Встречи<span>3</span></a></li>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-4.svg" alt="" /></div>СТ: Посетители</a></li>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-5.svg" alt="" /></div>СТ: Экспоненты</a></li>
+                                <li class="active"><a href="#"><div class="side-menu-icon"><img src="images/side-menu-6.svg" alt="" /></div>Компании</a></li>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-7.svg" alt="" /></div>Представители</a></li>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-8.svg" alt="" /></div>Техническая поддержка</a></li>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-9.svg" alt="" /></div>Обратная связь</a></li>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-10.svg" alt="" /></div>Расписания</a></li>
+                                <li><a href="#"><div class="side-menu-icon"><img src="images/side-menu-11.svg" alt="" /></div>Вопрос</a></li>
+                                <li class="sep"><a href="#"><div class="side-menu-icon"><img src="images/side-menu-12.svg" alt="" /></div>Выйти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- side END -->
+
+                    <!-- cabinet container -->
+                    <div class="cabinet-container">
+                        <div class="cabinet-container-inner">
+
+                            <h1>Компании</h1>
+
+                            <!-- manager table ctrl -->
+                            <div class="manager-table-ctrl">
+                                <div class="manager-table-filter">
+                                    <div class="manager-table-filter-link">Фильтры</div>
+                                    <div class="manager-table-filter-params"></div>
+                                    <div class="manager-table-filter-params-window">
+                                        <form action="ajax/07-companies.html" method="post">
+                                            <div class="manager-table-filter-params-window-col">
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Участие в разделах</div>
+                                                    <div class="manager-table-filter-params-window-props-list manager-table-filter-params-window-props-group">
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="section1" checked="checked" /><span>Оптовая торговля</span></label>
+                                                        </div>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="section2" /><span>Производитель</span></label>
+                                                        </div>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="section3" /><span>Ритейлер</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="manager-table-filter-params-window-dates">
+                                                    <div class="manager-table-filter-params-window-title">День встречи</div>
+                                                    <div class="manager-table-filter-params-window-date">
+                                                        <div class="manager-table-filter-params-window-date-title">с</div>
+                                                        <div class="manager-table-filter-params-window-date-field">
+                                                            <div class="form-input form-input-date"><input type="text" name="dateFrom" class="filter-date-from" value="" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="manager-table-filter-params-window-date">
+                                                        <div class="manager-table-filter-params-window-date-title">по</div>
+                                                        <div class="manager-table-filter-params-window-date-field">
+                                                            <div class="form-input form-input-date"><input type="text" name="dateTo" class="filter-date-to" value="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Количество встреч</div>
+                                                    <div class="manager-table-filter-params-window-count-meets">
+                                                        <div class="manager-table-filter-params-window-count-meets-from">с</div>
+                                                        <div class="manager-table-filter-params-window-count-meets-input"><div class="form-input"><input type="text" name="countFrom" value="1" /></div></div>
+                                                        <div class="manager-table-filter-params-window-count-meets-to">по</div>
+                                                        <div class="manager-table-filter-params-window-count-meets-input"><div class="form-input"><input type="text" name="countTo" value="3" /></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="manager-table-filter-params-window-col">
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Уровень доверия</div>
+                                                    <div class="manager-table-filter-params-window-props-list">
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="trust1" checked="checked" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-1"></div>Высокий</span></label>
+                                                        </div>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="trust2" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-2"></div>Средний</span></label>
+                                                        </div>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="trust3" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-3"></div>Низкий</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Род деятельности</div>
+                                                    <div class="manager-table-filter-params-window-props-list manager-table-filter-params-window-props-group">
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="type1" checked="checked" /><span>Крупносерийное производство</span></label>
+                                                        </div>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="type2" /><span>Мелкосерийное производство</span></label>
+                                                        </div>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="type3" /><span>Салон тканей и комплектующих</span></label>
+                                                        </div>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="type4" /><span>Деловая программа</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="manager-table-filter-params-window-col">
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Город</div>
+                                                    <div class="form-select form-select-ajax" data-link="ajax/cities.json">
+                                                        <select name="city" data-placeholder="Выберите город">
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Регион</div>
+                                                    <div class="form-select form-select-ajax" data-link="ajax/regions.json">
+                                                        <select name="region" data-placeholder="Выберите регион">
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Категория</div>
+                                                    <div class="manager-filter-select">
+                                                        <div class="manager-filter-select-current default" data-placeholder="Выберите категорию">Выберите категорию</div>
+                                                        <div class="manager-filter-select-list manager-table-filter-params-window-props-group">
+                                                            <ul>
+                                                                <li><label><input type="checkbox" name="category[]" value="1" /><span><img src="images/catalogue-category-1.svg" alt="" />женская одежда</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="2" /><span><img src="images/catalogue-category-2.svg" alt="" />мужская одежда</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="3" /><span><img src="images/catalogue-category-3.svg" alt="" />детская одежда</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="4" /><span><img src="images/catalogue-category-4.svg" alt="" />верхняя детская одежда</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="5" /><span><img src="images/catalogue-category-5.svg" alt="" />верхняя одежда</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="6" /><span><img src="images/catalogue-category-6.svg" alt="" />школьная форма</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="7" /><span><img src="images/catalogue-category-7.svg" alt="" />джинсовая одежда</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="8" /><span><img src="images/catalogue-category-8.svg" alt="" />для беременных</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="9" /><span><img src="images/catalogue-category-9.svg" alt="" />головные уборы</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="10" /><span><img src="images/catalogue-category-10.svg" alt="" />домашняя одежда и текстиль</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="11" /><span><img src="images/catalogue-category-11.svg" alt="" />большие размеры</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="12" /><span><img src="images/catalogue-category-12.svg" alt="" />купальники</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="13" /><span><img src="images/catalogue-category-13.svg" alt="" />вязаный трикотаж</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="14" /><span><img src="images/catalogue-category-14.svg" alt="" />кроеный трикотаж</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="15" /><span><img src="images/catalogue-category-15.svg" alt="" />нижнее белье</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="16" /><span><img src="images/catalogue-category-16.svg" alt="" />термобелье</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="17" /><span><img src="images/catalogue-category-17.svg" alt="" />спортивная одежда</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="18" /><span><img src="images/catalogue-category-18.svg" alt="" />носочно-чулочная продукция</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="19" /><span><img src="images/catalogue-category-19.svg" alt="" />униформа и спецодежда</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="20" /><span><img src="images/catalogue-category-20.svg" alt="" />сумки и аксессуары</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="21" /><span><img src="images/catalogue-category-21.svg" alt="" />ткань</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="22" /><span><img src="images/catalogue-category-22.svg" alt="" />медицинские изделия</span></label></li>
+                                                                <li><label><input type="checkbox" name="category[]" value="23" /><span><img src="images/catalogue-category-23.svg" alt="" />СИЗ</span></label></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Сырье</div>
+                                                    <div class="manager-filter-select">
+                                                        <div class="manager-filter-select-current default" data-placeholder="Выберите категорию">Выберите сырье</div>
+                                                        <div class="manager-filter-select-list manager-filter-select-list-source manager-table-filter-params-window-props-group">
+                                                            <ul>
+                                                                <li><label><input type="checkbox" name="source[]" value="1" /><span>Собственное</span></label></li>
+                                                                <li><label><input type="checkbox" name="source[]" value="2" /><span>Давальческое</span></label></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="manager-table-filter-params-window-props">
+                                                    <div class="manager-table-filter-params-window-title">Посетитель</div>
+                                                    <div class="manager-filter-select">
+                                                        <div class="manager-filter-select-current default" data-placeholder="Выберите посетителя">Выберите посетителя</div>
+                                                        <div class="manager-filter-select-list manager-filter-select-list-company manager-table-filter-params-window-props-group">
+                                                            <ul>
+                                                                <li><label><input type="checkbox" name="company[]" value="1" /><span><img src="files/catalogue-logo-02.png" alt="" />Акос тэкс</span></label></li>
+                                                                <li><label><input type="checkbox" name="company[]" value="2" /><span><img src="files/catalogue-logo-04.png" alt="" />Bonadi</span></label></li>
+                                                                <li><label><input type="checkbox" name="company[]" value="3" /><span><img src="files/catalogue-logo-02.png" alt="" />Акос тэкс</span></label></li>
+                                                                <li><label><input type="checkbox" name="company[]" value="4" /><span><img src="files/catalogue-logo-04.png" alt="" />Bonadi</span></label></li>
+                                                                <li><label><input type="checkbox" name="company[]" value="5" /><span><img src="files/catalogue-logo-02.png" alt="" />Акос тэкс</span></label></li>
+                                                                <li><label><input type="checkbox" name="company[]" value="6" /><span><img src="files/catalogue-logo-04.png" alt="" />Bonadi</span></label></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="manager-table-action">
+                                    <div class="support-search">
+                                        <div class="support-search-inner">
+                                            <a href="#" class="support-search-link"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.88187 0C9.38571 5.23976e-05 10.8583 0.419131 12.1267 1.20801C13.3951 1.99689 14.4066 3.12281 15.0423 4.45351C15.6781 5.78422 15.9118 7.26444 15.7159 8.72032C15.52 10.1762 14.9027 11.5473 13.9365 12.6725L17.7095 16.3469C17.8016 16.4368 17.8747 16.5436 17.9245 16.6611C17.9743 16.7785 18 16.9045 18 17.0316C18 17.1588 17.9743 17.2847 17.9245 17.4022C17.8747 17.5197 17.8016 17.6264 17.7095 17.7164C17.5235 17.898 17.2713 18 17.0083 18C16.878 18 16.7491 17.975 16.6287 17.9263C16.5084 17.8776 16.3991 17.8063 16.307 17.7164L12.5043 13.9744C11.1666 14.9232 9.55503 15.4331 7.90163 15.4307C5.80599 15.4307 3.79618 14.6178 2.31433 13.1709C0.832491 11.724 1.90735e-06 9.76159 1.90735e-06 7.71535C1.90735e-06 5.66911 0.832491 3.70668 2.31433 2.25977C3.79618 0.812865 5.80599 0 7.90163 0H7.88187ZM7.88187 13.5019C9.05397 13.5019 10.1997 13.1625 11.1743 12.5267C12.1489 11.8908 12.9084 10.9871 13.357 9.92975C13.8055 8.87241 13.9229 7.70893 13.6942 6.58646C13.4656 5.46398 12.9011 4.43293 12.0723 3.62367C11.2435 2.81441 10.1876 2.2633 9.03802 2.04002C7.88845 1.81675 6.69688 1.93134 5.61401 2.36931C4.53113 2.80728 3.60558 3.54895 2.9544 4.50054C2.30322 5.45212 1.95565 6.57089 1.95565 7.71535C1.95565 9.25003 2.58002 10.7219 3.6914 11.807C4.80279 12.8922 6.31014 13.5019 7.88187 13.5019Z" /></svg></a>
+                                            <div class="support-search-window">
+                                                <form action="ajax/07-companies.html" method="post">
+                                                    <div class="support-search-window-input"><input type="text" name="search" value="" placeholder="Поиск" /></div>
+                                                    <div class="support-search-window-submit"><button type="submit"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.88187 0C9.38571 5.23976e-05 10.8583 0.419131 12.1267 1.20801C13.3951 1.99689 14.4066 3.12281 15.0423 4.45351C15.6781 5.78422 15.9118 7.26444 15.7159 8.72032C15.52 10.1762 14.9027 11.5473 13.9365 12.6725L17.7095 16.3469C17.8016 16.4368 17.8747 16.5436 17.9245 16.6611C17.9743 16.7785 18 16.9045 18 17.0316C18 17.1588 17.9743 17.2847 17.9245 17.4022C17.8747 17.5197 17.8016 17.6264 17.7095 17.7164C17.5235 17.898 17.2713 18 17.0083 18C16.878 18 16.7491 17.975 16.6287 17.9263C16.5084 17.8776 16.3991 17.8063 16.307 17.7164L12.5043 13.9744C11.1666 14.9232 9.55503 15.4331 7.90163 15.4307C5.80599 15.4307 3.79618 14.6178 2.31433 13.1709C0.832491 11.724 1.90735e-06 9.76159 1.90735e-06 7.71535C1.90735e-06 5.66911 0.832491 3.70668 2.31433 2.25977C3.79618 0.812865 5.80599 0 7.90163 0H7.88187ZM7.88187 13.5019C9.05397 13.5019 10.1997 13.1625 11.1743 12.5267C12.1489 11.8908 12.9084 10.9871 13.357 9.92975C13.8055 8.87241 13.9229 7.70893 13.6942 6.58646C13.4656 5.46398 12.9011 4.43293 12.0723 3.62367C11.2435 2.81441 10.1876 2.2633 9.03802 2.04002C7.88845 1.81675 6.69688 1.93134 5.61401 2.36931C4.53113 2.80728 3.60558 3.54895 2.9544 4.50054C2.30322 5.45212 1.95565 6.57089 1.95565 7.71535C1.95565 9.25003 2.58002 10.7219 3.6914 11.807C4.80279 12.8922 6.31014 13.5019 7.88187 13.5019Z" /></svg></button></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="manager-table-action-btn"><a href="#" class="btn btn-mini"><img src="images/main-link-add-company.svg" alt="" class="main-link-add-company-btn" />Добавить</a></div>
+                                </div>
+                            </div>
+                            <!-- manager table ctrl END -->
+
+                            <!-- manager table content -->
+                            <div class="manager-table-content">
+                                <!-- manager table container -->
+                                <div class="manager-table-container">
+                                    <!-- manager table wrapper -->
+                                    <div class="manager-table-wrapper manager-table-dashboard-visitors manager-table-summary-visitors manager-table-companies">
+                                        <!-- manager table -->
+                                        <div class="manager-table">
+                                            <div class="manager-table-header">
+                                                <div class="manager-table-head manager-table-head-active">&nbsp;</div>
+                                                <div class="manager-table-head">посетитель</div>
+                                                <div class="manager-table-head">данные</div>
+                                                <div class="manager-table-head">представитель</div>
+                                                <div class="manager-table-head">город</div>
+                                                <div class="manager-table-head">встречи</div>
+                                            </div>
+
+                                            <!-- manager table row -->
+                                            <div class="manager-table-row">
+                                                <div class="manager-table-cell manager-table-cell-active manager-table-cell-active-1">
+                                                    <div class="manager-table-cell-active-inner"></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-company manager-table-cell-company-type-1">
+                                                    <div class="manager-table-company-name"><a href="windows/company.html" class="window-link"><span>Дом моды Стиль ЛС</span></a><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.41797 7.04173C5.65059 7.35272 5.94737 7.61004 6.28818 7.79624C6.629 7.98244 7.00587 8.09317 7.39324 8.12091C7.78061 8.14865 8.16941 8.09276 8.53328 7.95703C8.89715 7.82129 9.22757 7.60889 9.50214 7.33423L11.1271 5.70923C11.6205 5.19843 11.8935 4.5143 11.8873 3.80418C11.8811 3.09407 11.5963 2.41478 11.0941 1.91264C10.592 1.41049 9.91271 1.12566 9.2026 1.11949C8.49248 1.11332 7.80835 1.3863 7.29755 1.87965L6.36589 2.8059" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.58271 5.95829C7.35009 5.64731 7.05331 5.38999 6.71249 5.20378C6.37168 5.01758 5.99481 4.90685 5.60744 4.87911C5.22007 4.85137 4.83127 4.90726 4.4674 5.04299C4.10353 5.17873 3.77311 5.39113 3.49854 5.66579L1.87354 7.29079C1.3802 7.80159 1.10721 8.48572 1.11338 9.19584C1.11955 9.90595 1.40439 10.5852 1.90653 11.0874C2.40868 11.5895 3.08796 11.8744 3.79808 11.8805C4.5082 11.8867 5.19233 11.6137 5.70313 11.1204L6.62938 10.1941" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+                                                    <div class="manager-table-company-text">Оптовая торговля</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-mobile">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67<span></span>Санкт-Петербург</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-company">
+                                                    <div class="manager-table-cell-title-mobile">Данные компании</div>
+                                                    <div class="manager-table-delegate-name">ИП</div>
+                                                    <div class="manager-table-delegate-phone">44122333344</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-city">Санкт-Петербург</div>
+                                                <div class="manager-table-cell manager-table-cell-meets-company">
+                                                    <div class="manager-table-cell-title-mobile">Встречи</div>
+                                                    <div class="manager-table-events-count">12 <span>+10</span></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-action">
+                                                    <a href="#"><img src="images/manager-table-action-edit.svg" alt="" /></a>
+                                                    <a href="#"><img src="images/manager-table-action-delete.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <!-- manager table row END -->
+
+                                            <!-- manager table row -->
+                                            <div class="manager-table-row">
+                                                <div class="manager-table-cell manager-table-cell-active manager-table-cell-active-2">
+                                                    <div class="manager-table-cell-active-inner"></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-company manager-table-cell-company-type-2">
+                                                    <div class="manager-table-company-name"><a href="#"><span>Zara</span></a><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.41797 7.04173C5.65059 7.35272 5.94737 7.61004 6.28818 7.79624C6.629 7.98244 7.00587 8.09317 7.39324 8.12091C7.78061 8.14865 8.16941 8.09276 8.53328 7.95703C8.89715 7.82129 9.22757 7.60889 9.50214 7.33423L11.1271 5.70923C11.6205 5.19843 11.8935 4.5143 11.8873 3.80418C11.8811 3.09407 11.5963 2.41478 11.0941 1.91264C10.592 1.41049 9.91271 1.12566 9.2026 1.11949C8.49248 1.11332 7.80835 1.3863 7.29755 1.87965L6.36589 2.8059" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.58271 5.95829C7.35009 5.64731 7.05331 5.38999 6.71249 5.20378C6.37168 5.01758 5.99481 4.90685 5.60744 4.87911C5.22007 4.85137 4.83127 4.90726 4.4674 5.04299C4.10353 5.17873 3.77311 5.39113 3.49854 5.66579L1.87354 7.29079C1.3802 7.80159 1.10721 8.48572 1.11338 9.19584C1.11955 9.90595 1.40439 10.5852 1.90653 11.0874C2.40868 11.5895 3.08796 11.8744 3.79808 11.8805C4.5082 11.8867 5.19233 11.6137 5.70313 11.1204L6.62938 10.1941" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+                                                    <div class="manager-table-company-text">Оптовая торговля</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-mobile">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67<span></span>Москва</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-company">
+                                                    <div class="manager-table-cell-title-mobile">Данные компании</div>
+                                                    <div class="manager-table-delegate-name">ООО</div>
+                                                    <div class="manager-table-delegate-phone">44122333344</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-city">Москва</div>
+                                                <div class="manager-table-cell manager-table-cell-meets-company">
+                                                    <div class="manager-table-cell-title-mobile">Встречи</div>
+                                                    <div class="manager-table-events-count">1 <span>+3</span></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-action">
+                                                    <a href="#"><img src="images/manager-table-action-edit.svg" alt="" /></a>
+                                                    <a href="#"><img src="images/manager-table-action-delete.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <!-- manager table row END -->
+
+                                            <!-- manager table row -->
+                                            <div class="manager-table-row">
+                                                <div class="manager-table-cell manager-table-cell-active manager-table-cell-active-1">
+                                                    <div class="manager-table-cell-active-inner"></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-company manager-table-cell-company-type-1">
+                                                    <div class="manager-table-company-name"><a href="windows/company.html" class="window-link"><span>Дом моды Стиль ЛС</span></a><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.41797 7.04173C5.65059 7.35272 5.94737 7.61004 6.28818 7.79624C6.629 7.98244 7.00587 8.09317 7.39324 8.12091C7.78061 8.14865 8.16941 8.09276 8.53328 7.95703C8.89715 7.82129 9.22757 7.60889 9.50214 7.33423L11.1271 5.70923C11.6205 5.19843 11.8935 4.5143 11.8873 3.80418C11.8811 3.09407 11.5963 2.41478 11.0941 1.91264C10.592 1.41049 9.91271 1.12566 9.2026 1.11949C8.49248 1.11332 7.80835 1.3863 7.29755 1.87965L6.36589 2.8059" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.58271 5.95829C7.35009 5.64731 7.05331 5.38999 6.71249 5.20378C6.37168 5.01758 5.99481 4.90685 5.60744 4.87911C5.22007 4.85137 4.83127 4.90726 4.4674 5.04299C4.10353 5.17873 3.77311 5.39113 3.49854 5.66579L1.87354 7.29079C1.3802 7.80159 1.10721 8.48572 1.11338 9.19584C1.11955 9.90595 1.40439 10.5852 1.90653 11.0874C2.40868 11.5895 3.08796 11.8744 3.79808 11.8805C4.5082 11.8867 5.19233 11.6137 5.70313 11.1204L6.62938 10.1941" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+                                                    <div class="manager-table-company-text">Оптовая торговля</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-mobile">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67<span></span>Санкт-Петербург</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-company">
+                                                    <div class="manager-table-cell-title-mobile">Данные компании</div>
+                                                    <div class="manager-table-delegate-name">ИП</div>
+                                                    <div class="manager-table-delegate-phone">44122333344</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-city">Санкт-Петербург</div>
+                                                <div class="manager-table-cell manager-table-cell-meets-company">
+                                                    <div class="manager-table-cell-title-mobile">Встречи</div>
+                                                    <div class="manager-table-events-count">12 <span>+10</span></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-action">
+                                                    <a href="#"><img src="images/manager-table-action-edit.svg" alt="" /></a>
+                                                    <a href="#"><img src="images/manager-table-action-delete.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <!-- manager table row END -->
+
+                                            <!-- manager table row -->
+                                            <div class="manager-table-row">
+                                                <div class="manager-table-cell manager-table-cell-active manager-table-cell-active-2">
+                                                    <div class="manager-table-cell-active-inner"></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-company manager-table-cell-company-type-2">
+                                                    <div class="manager-table-company-name"><a href="#"><span>Zara</span></a><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.41797 7.04173C5.65059 7.35272 5.94737 7.61004 6.28818 7.79624C6.629 7.98244 7.00587 8.09317 7.39324 8.12091C7.78061 8.14865 8.16941 8.09276 8.53328 7.95703C8.89715 7.82129 9.22757 7.60889 9.50214 7.33423L11.1271 5.70923C11.6205 5.19843 11.8935 4.5143 11.8873 3.80418C11.8811 3.09407 11.5963 2.41478 11.0941 1.91264C10.592 1.41049 9.91271 1.12566 9.2026 1.11949C8.49248 1.11332 7.80835 1.3863 7.29755 1.87965L6.36589 2.8059" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.58271 5.95829C7.35009 5.64731 7.05331 5.38999 6.71249 5.20378C6.37168 5.01758 5.99481 4.90685 5.60744 4.87911C5.22007 4.85137 4.83127 4.90726 4.4674 5.04299C4.10353 5.17873 3.77311 5.39113 3.49854 5.66579L1.87354 7.29079C1.3802 7.80159 1.10721 8.48572 1.11338 9.19584C1.11955 9.90595 1.40439 10.5852 1.90653 11.0874C2.40868 11.5895 3.08796 11.8744 3.79808 11.8805C4.5082 11.8867 5.19233 11.6137 5.70313 11.1204L6.62938 10.1941" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+                                                    <div class="manager-table-company-text">Оптовая торговля</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-mobile">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67<span></span>Москва</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-company">
+                                                    <div class="manager-table-cell-title-mobile">Данные компании</div>
+                                                    <div class="manager-table-delegate-name">ООО</div>
+                                                    <div class="manager-table-delegate-phone">44122333344</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-city">Москва</div>
+                                                <div class="manager-table-cell manager-table-cell-meets-company">
+                                                    <div class="manager-table-cell-title-mobile">Встречи</div>
+                                                    <div class="manager-table-events-count">1 <span>+3</span></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-action">
+                                                    <a href="#"><img src="images/manager-table-action-edit.svg" alt="" /></a>
+                                                    <a href="#"><img src="images/manager-table-action-delete.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <!-- manager table row END -->
+
+                                            <!-- manager table row -->
+                                            <div class="manager-table-row">
+                                                <div class="manager-table-cell manager-table-cell-active manager-table-cell-active-1">
+                                                    <div class="manager-table-cell-active-inner"></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-company manager-table-cell-company-type-1">
+                                                    <div class="manager-table-company-name"><a href="windows/company.html" class="window-link"><span>Дом моды Стиль ЛС</span></a><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.41797 7.04173C5.65059 7.35272 5.94737 7.61004 6.28818 7.79624C6.629 7.98244 7.00587 8.09317 7.39324 8.12091C7.78061 8.14865 8.16941 8.09276 8.53328 7.95703C8.89715 7.82129 9.22757 7.60889 9.50214 7.33423L11.1271 5.70923C11.6205 5.19843 11.8935 4.5143 11.8873 3.80418C11.8811 3.09407 11.5963 2.41478 11.0941 1.91264C10.592 1.41049 9.91271 1.12566 9.2026 1.11949C8.49248 1.11332 7.80835 1.3863 7.29755 1.87965L6.36589 2.8059" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.58271 5.95829C7.35009 5.64731 7.05331 5.38999 6.71249 5.20378C6.37168 5.01758 5.99481 4.90685 5.60744 4.87911C5.22007 4.85137 4.83127 4.90726 4.4674 5.04299C4.10353 5.17873 3.77311 5.39113 3.49854 5.66579L1.87354 7.29079C1.3802 7.80159 1.10721 8.48572 1.11338 9.19584C1.11955 9.90595 1.40439 10.5852 1.90653 11.0874C2.40868 11.5895 3.08796 11.8744 3.79808 11.8805C4.5082 11.8867 5.19233 11.6137 5.70313 11.1204L6.62938 10.1941" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+                                                    <div class="manager-table-company-text">Оптовая торговля</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-mobile">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67<span></span>Санкт-Петербург</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-company">
+                                                    <div class="manager-table-cell-title-mobile">Данные компании</div>
+                                                    <div class="manager-table-delegate-name">ИП</div>
+                                                    <div class="manager-table-delegate-phone">44122333344</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-city">Санкт-Петербург</div>
+                                                <div class="manager-table-cell manager-table-cell-meets-company">
+                                                    <div class="manager-table-cell-title-mobile">Встречи</div>
+                                                    <div class="manager-table-events-count">12 <span>+10</span></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-action">
+                                                    <a href="#"><img src="images/manager-table-action-edit.svg" alt="" /></a>
+                                                    <a href="#"><img src="images/manager-table-action-delete.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <!-- manager table row END -->
+
+                                            <!-- manager table row -->
+                                            <div class="manager-table-row">
+                                                <div class="manager-table-cell manager-table-cell-active manager-table-cell-active-2">
+                                                    <div class="manager-table-cell-active-inner"></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-company manager-table-cell-company-type-2">
+                                                    <div class="manager-table-company-name"><a href="#"><span>Zara</span></a><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.41797 7.04173C5.65059 7.35272 5.94737 7.61004 6.28818 7.79624C6.629 7.98244 7.00587 8.09317 7.39324 8.12091C7.78061 8.14865 8.16941 8.09276 8.53328 7.95703C8.89715 7.82129 9.22757 7.60889 9.50214 7.33423L11.1271 5.70923C11.6205 5.19843 11.8935 4.5143 11.8873 3.80418C11.8811 3.09407 11.5963 2.41478 11.0941 1.91264C10.592 1.41049 9.91271 1.12566 9.2026 1.11949C8.49248 1.11332 7.80835 1.3863 7.29755 1.87965L6.36589 2.8059" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.58271 5.95829C7.35009 5.64731 7.05331 5.38999 6.71249 5.20378C6.37168 5.01758 5.99481 4.90685 5.60744 4.87911C5.22007 4.85137 4.83127 4.90726 4.4674 5.04299C4.10353 5.17873 3.77311 5.39113 3.49854 5.66579L1.87354 7.29079C1.3802 7.80159 1.10721 8.48572 1.11338 9.19584C1.11955 9.90595 1.40439 10.5852 1.90653 11.0874C2.40868 11.5895 3.08796 11.8744 3.79808 11.8805C4.5082 11.8867 5.19233 11.6137 5.70313 11.1204L6.62938 10.1941" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+                                                    <div class="manager-table-company-text">Оптовая торговля</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-mobile">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67<span></span>Москва</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-company">
+                                                    <div class="manager-table-cell-title-mobile">Данные компании</div>
+                                                    <div class="manager-table-delegate-name">ООО</div>
+                                                    <div class="manager-table-delegate-phone">44122333344</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-city">Москва</div>
+                                                <div class="manager-table-cell manager-table-cell-meets-company">
+                                                    <div class="manager-table-cell-title-mobile">Встречи</div>
+                                                    <div class="manager-table-events-count">1 <span>+3</span></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-action">
+                                                    <a href="#"><img src="images/manager-table-action-edit.svg" alt="" /></a>
+                                                    <a href="#"><img src="images/manager-table-action-delete.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <!-- manager table row END -->
+
+                                            <!-- manager table row -->
+                                            <div class="manager-table-row">
+                                                <div class="manager-table-cell manager-table-cell-active manager-table-cell-active-1">
+                                                    <div class="manager-table-cell-active-inner"></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-company manager-table-cell-company-type-1">
+                                                    <div class="manager-table-company-name"><a href="windows/company.html" class="window-link"><span>Дом моды Стиль ЛС</span></a><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.41797 7.04173C5.65059 7.35272 5.94737 7.61004 6.28818 7.79624C6.629 7.98244 7.00587 8.09317 7.39324 8.12091C7.78061 8.14865 8.16941 8.09276 8.53328 7.95703C8.89715 7.82129 9.22757 7.60889 9.50214 7.33423L11.1271 5.70923C11.6205 5.19843 11.8935 4.5143 11.8873 3.80418C11.8811 3.09407 11.5963 2.41478 11.0941 1.91264C10.592 1.41049 9.91271 1.12566 9.2026 1.11949C8.49248 1.11332 7.80835 1.3863 7.29755 1.87965L6.36589 2.8059" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.58271 5.95829C7.35009 5.64731 7.05331 5.38999 6.71249 5.20378C6.37168 5.01758 5.99481 4.90685 5.60744 4.87911C5.22007 4.85137 4.83127 4.90726 4.4674 5.04299C4.10353 5.17873 3.77311 5.39113 3.49854 5.66579L1.87354 7.29079C1.3802 7.80159 1.10721 8.48572 1.11338 9.19584C1.11955 9.90595 1.40439 10.5852 1.90653 11.0874C2.40868 11.5895 3.08796 11.8744 3.79808 11.8805C4.5082 11.8867 5.19233 11.6137 5.70313 11.1204L6.62938 10.1941" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+                                                    <div class="manager-table-company-text">Оптовая торговля</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-mobile">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67<span></span>Санкт-Петербург</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-company">
+                                                    <div class="manager-table-cell-title-mobile">Данные компании</div>
+                                                    <div class="manager-table-delegate-name">ИП</div>
+                                                    <div class="manager-table-delegate-phone">44122333344</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-city">Санкт-Петербург</div>
+                                                <div class="manager-table-cell manager-table-cell-meets-company">
+                                                    <div class="manager-table-cell-title-mobile">Встречи</div>
+                                                    <div class="manager-table-events-count">12 <span>+10</span></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-action">
+                                                    <a href="#"><img src="images/manager-table-action-edit.svg" alt="" /></a>
+                                                    <a href="#"><img src="images/manager-table-action-delete.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <!-- manager table row END -->
+
+                                            <!-- manager table row -->
+                                            <div class="manager-table-row">
+                                                <div class="manager-table-cell manager-table-cell-active manager-table-cell-active-2">
+                                                    <div class="manager-table-cell-active-inner"></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-company manager-table-cell-company-type-2">
+                                                    <div class="manager-table-company-name"><a href="#"><span>Zara</span></a><a href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.41797 7.04173C5.65059 7.35272 5.94737 7.61004 6.28818 7.79624C6.629 7.98244 7.00587 8.09317 7.39324 8.12091C7.78061 8.14865 8.16941 8.09276 8.53328 7.95703C8.89715 7.82129 9.22757 7.60889 9.50214 7.33423L11.1271 5.70923C11.6205 5.19843 11.8935 4.5143 11.8873 3.80418C11.8811 3.09407 11.5963 2.41478 11.0941 1.91264C10.592 1.41049 9.91271 1.12566 9.2026 1.11949C8.49248 1.11332 7.80835 1.3863 7.29755 1.87965L6.36589 2.8059" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.58271 5.95829C7.35009 5.64731 7.05331 5.38999 6.71249 5.20378C6.37168 5.01758 5.99481 4.90685 5.60744 4.87911C5.22007 4.85137 4.83127 4.90726 4.4674 5.04299C4.10353 5.17873 3.77311 5.39113 3.49854 5.66579L1.87354 7.29079C1.3802 7.80159 1.10721 8.48572 1.11338 9.19584C1.11955 9.90595 1.40439 10.5852 1.90653 11.0874C2.40868 11.5895 3.08796 11.8744 3.79808 11.8805C4.5082 11.8867 5.19233 11.6137 5.70313 11.1204L6.62938 10.1941" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+                                                    <div class="manager-table-company-text">Оптовая торговля</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-mobile">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67<span></span>Москва</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate manager-table-cell-delegate-company">
+                                                    <div class="manager-table-cell-title-mobile">Данные компании</div>
+                                                    <div class="manager-table-delegate-name">ООО</div>
+                                                    <div class="manager-table-delegate-phone">44122333344</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-delegate">
+                                                    <div class="manager-table-delegate-name">Можайский Антон</div>
+                                                    <div class="manager-table-delegate-phone">+7 915 123-45-67</div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-city">Москва</div>
+                                                <div class="manager-table-cell manager-table-cell-meets-company">
+                                                    <div class="manager-table-cell-title-mobile">Встречи</div>
+                                                    <div class="manager-table-events-count">1 <span>+3</span></div>
+                                                </div>
+                                                <div class="manager-table-cell manager-table-cell-action">
+                                                    <a href="#"><img src="images/manager-table-action-edit.svg" alt="" /></a>
+                                                    <a href="#"><img src="images/manager-table-action-delete.svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                            <!-- manager table row END -->
+                                        </div>
+                                        <!-- manager table END -->
+                                    </div>
+                                    <!-- manager table wrapper END -->
+                                </div>
+                                <!-- manager table container END -->
+
+                                <div class="pager">
+                                    <a href="#" class="pager-prev"></a>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#" class="pager-next"></a>
+                                </div>
+                            </div>
+                            <!-- manager table content END -->
+
+                        </div>
+                    </div>
+                    <!-- cabinet container END -->
+
+                </div>
+                <!-- cabinet END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="container">
+                <div class="footer-right">
+                    <div class="footer-block">
+                        <div class="footer-block-link"><a href="#">Bee-together 2020</a></div>
+                        <div class="footer-block-content">
+                            <div class="footer-archive">
+                                <div class="footer-archive-item"><a href="#">Участники</a></div>
+                                <div class="footer-archive-item"><a href="#">Расписание конференции</a></div>
+                                <div class="footer-archive-item"><a href="#">FAQ</a></div>
+                                <div class="footer-archive-item"><a href="#">Новости</a></div>
+                            </div>
+                        </div>
+                        <div class="footer-block-link"><a href="#">Bee-online 9</a></div>
+                    </div>
+
+                    <div class="footer-block">
+                        <div class="footer-block-title">Архив мероприятий</div>
+                        <div class="footer-block-content">
+                            <div class="footer-archive">
+                                <div class="footer-archive-item"><a href="#">Bee-Together 8 (2019)</a></div>
+                                <div class="footer-archive-item"><a href="#">Bee-Together 7 (2018)</a></div>
+                                <div class="footer-archive-item"><a href="#">Bee-Together 6 (2017)</a></div>
+                                <div class="footer-archive-item"><a href="#">Bee-Together 5 (2016)</a></div>
+                                <div class="footer-archive-all"><a href="#">смотреть все</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-block footer-block-contacts">
+                        <div class="footer-block-title">По вопросам посещения:</div>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-item">
+                                <div class="footer-contacts-item-name">Виктория</div>
+                                <div class="footer-contacts-item-info">
+                                    <div class="footer-contacts-item-info-phone"><a href="tel:+79161341321">+7 (916) 134-13-21</a></div>
+                                    <div class="footer-contacts-item-info-email"><a href="mailto:manager@rafi.moscow">manager@rafi.moscow</a></div>
+                                </div>
+                            </div>
+                            <div class="footer-contacts-item">
+                                <div class="footer-contacts-item-name">Маргарита</div>
+                                <div class="footer-contacts-item-info">
+                                    <div class="footer-contacts-item-info-phone"><a href="tel:+79161341321">+7 (916) 134-13-21</a></div>
+                                    <div class="footer-contacts-item-info-email"><a href="mailto:manager@rafi.moscow">manager@rafi.moscow</a></div>
+                                </div>
+                            </div>
+                            <div class="footer-contacts-item">
+                                <div class="footer-contacts-item-name">Людмила</div>
+                                <div class="footer-contacts-item-info">
+                                    <div class="footer-contacts-item-info-phone"><a href="tel:+79161341321">+7 (916) 134-13-21</a></div>
+                                    <div class="footer-contacts-item-info-email"><a href="mailto:manager@rafi.moscow">manager@rafi.moscow</a></div>
+                                </div>
+                            </div>
+                            <div class="footer-contacts-item">
+                                <div class="footer-contacts-item-name">Людмила</div>
+                                <div class="footer-contacts-item-info">
+                                    <div class="footer-contacts-item-info-phone"><a href="tel:+79161341321">+7 (916) 134-13-21</a></div>
+                                    <div class="footer-contacts-item-info-email"><a href="mailto:manager@rafi.moscow">manager@rafi.moscow</a></div>
+                                </div>
+                            </div>
+                            <div class="footer-contacts-all"><a href="#">все контакты</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-left">
+                    <div class="footer-logo"></div>
+                    <div class="footer-title">Аутсорсинг легкой промышленности</div>
+                    <div class="footer-copyrights">© 2016—2020</div>
+
+                    <div class="footer-social">
+                        <a href="#"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29 14.5C29 6.49102 22.509 0 14.5 0C6.49102 0 0 6.49102 0 14.5C0 21.7387 5.30156 27.7369 12.2344 28.8244V18.6914H8.55273V14.5H12.2344V11.3055C12.2344 7.67197 14.398 5.66406 17.7115 5.66406C19.2975 5.66406 20.957 5.94727 20.957 5.94727V9.51562H19.1275C17.3264 9.51562 16.7656 10.6343 16.7656 11.7812V14.5H20.7871L20.1442 18.6914H16.7656V28.8244C23.6984 27.7369 29 21.7387 29 14.5Z" /></svg></a>
+                        <a href="#"><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.0625 0C7.05437 0 0.5625 6.49187 0.5625 14.5C0.5625 22.5081 7.05437 29 15.0625 29C23.0706 29 29.5625 22.5081 29.5625 14.5C29.5625 6.49187 23.0706 0 15.0625 0ZM21.1044 9.51499C21.7699 9.69761 22.294 10.2357 22.4719 10.919C22.7951 12.1574 22.7951 14.7414 22.7951 14.7414C22.7951 14.7414 22.7951 17.3253 22.4719 18.5639C22.294 19.2472 21.7699 19.7853 21.1044 19.968C19.8983 20.2998 15.0618 20.2998 15.0618 20.2998C15.0618 20.2998 10.2252 20.2998 9.01904 19.968C8.35354 19.7853 7.82943 19.2472 7.65156 18.5639C7.32843 17.3253 7.32843 14.7414 7.32843 14.7414C7.32843 14.7414 7.32843 12.1574 7.65156 10.919C7.82943 10.2357 8.35354 9.69761 9.01904 9.51499C10.2252 9.18311 15.0618 9.18311 15.0618 9.18311C15.0618 9.18311 19.8983 9.18311 21.1044 9.51499Z" /><path d="M13.6128 17.3997V12.5664L17.4795 14.9832L13.6128 17.3997Z" /></svg></a>
+                        <a href="#"><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.626 0C6.61785 0 0.125977 6.49187 0.125977 14.5C0.125977 22.5081 6.61785 29 14.626 29C22.6341 29 29.126 22.5081 29.126 14.5C29.126 6.49187 22.6341 0 14.626 0ZM21.8528 9.74104C22.4114 9.74104 22.5376 10.0409 22.4114 10.4532C22.2146 11.3981 20.5799 13.9047 20.0736 14.681C19.9774 14.8285 19.9219 14.9136 19.9248 14.9136C19.7266 15.2509 19.6545 15.4009 19.9248 15.7757C20.0225 15.9143 20.2297 16.1257 20.4665 16.3674C20.71 16.6159 20.9849 16.8965 21.2042 17.1625C21.997 18.0996 22.6096 18.8867 22.7718 19.4302C22.916 19.9737 22.6637 20.2548 22.1231 20.2548H20.2672C19.7753 20.2548 19.5218 19.961 18.9814 19.3349C18.7498 19.0665 18.4654 18.7369 18.0868 18.3432C16.9877 17.2375 16.5011 17.0876 16.2309 17.0876C15.8525 17.0876 15.7443 17.1813 15.7443 17.7435V19.4864C15.7443 19.955 15.6002 20.2361 14.4109 20.2361C12.4468 20.2361 10.2665 18.9992 8.73488 16.694C6.42842 13.3206 5.79775 10.7718 5.79775 10.2658C5.79775 9.98468 5.88785 9.7223 6.42842 9.7223H8.30242C8.77092 9.7223 8.95111 9.92846 9.1313 10.4719C10.0503 13.2269 11.5819 15.6445 12.2126 15.6445C12.4468 15.6445 12.5549 15.5321 12.5549 14.9136V12.0649C12.5105 11.2552 12.2395 10.9025 12.0385 10.6409C11.9139 10.4786 11.8162 10.3514 11.8162 10.1721C11.8162 9.9472 11.9964 9.7223 12.2847 9.7223H15.2038C15.6002 9.7223 15.7443 9.9472 15.7443 10.4345V14.2764C15.7443 14.6887 15.9065 14.8386 16.0326 14.8386C16.2669 14.8386 16.4651 14.6887 16.8976 14.2389C18.231 12.6834 19.186 10.2845 19.186 10.2845C19.3121 10.0034 19.5284 9.74104 19.9969 9.74104H21.8528Z" /></svg></a>
+                        <a href="#"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 0C6.49187 0 0 6.49187 0 14.5C0 22.5081 6.49187 29 14.5 29C22.5081 29 29 22.5081 29 14.5C29 6.49187 22.5081 0 14.5 0ZM11.3115 6.81292C12.1364 6.77538 12.4 6.76619 14.5003 6.76619H14.4978C16.5987 6.76619 16.8614 6.77538 17.6863 6.81292C18.5095 6.85062 19.0718 6.98096 19.5648 7.1722C20.0739 7.36956 20.5041 7.63379 20.9343 8.06396C21.3645 8.49381 21.6287 8.92527 21.8269 9.4339C22.017 9.92562 22.1475 10.4876 22.1861 11.3109C22.2232 12.1358 22.2329 12.3993 22.2329 14.4996C22.2329 16.5999 22.2232 16.8628 22.1861 17.6877C22.1475 18.5107 22.017 19.0728 21.8269 19.5647C21.6287 20.0731 21.3645 20.5046 20.9343 20.9345C20.5046 21.3646 20.0738 21.6295 19.5653 21.827C19.0733 22.0183 18.5107 22.1486 17.6874 22.1863C16.8625 22.2238 16.5997 22.233 14.4993 22.233C12.3992 22.233 12.1358 22.2238 11.3109 22.1863C10.4877 22.1486 9.92562 22.0183 9.43358 21.827C8.92527 21.6295 8.49381 21.3646 8.06412 20.9345C7.63411 20.5046 7.36988 20.0731 7.1722 19.5645C6.98112 19.0728 6.85078 18.5108 6.81292 17.6875C6.77554 16.8626 6.76619 16.5999 6.76619 14.4996C6.76619 12.3993 6.77586 12.1356 6.81276 11.3107C6.84981 10.4877 6.98031 9.92562 7.17204 9.43374C7.37021 8.92527 7.63443 8.49381 8.0646 8.06396C8.49445 7.63395 8.92591 7.36972 9.43454 7.1722C9.92626 6.98096 10.4882 6.85062 11.3115 6.81292Z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M13.8062 8.16014C13.9409 8.15993 14.0858 8.15999 14.2422 8.16006L14.4999 8.16014C16.5648 8.16014 16.8095 8.16755 17.6249 8.2046C18.3789 8.23908 18.7881 8.36507 19.0607 8.47092C19.4216 8.61109 19.6789 8.77865 19.9494 9.04932C20.2201 9.31999 20.3876 9.57777 20.5281 9.93866C20.634 10.2109 20.7601 10.6202 20.7945 11.3742C20.8315 12.1894 20.8396 12.4343 20.8396 14.4982C20.8396 16.562 20.8315 16.8069 20.7945 17.6221C20.76 18.3761 20.634 18.7854 20.5281 19.0576C20.388 19.4185 20.2201 19.6755 19.9494 19.946C19.6788 20.2167 19.4218 20.3842 19.0607 20.5244C18.7884 20.6308 18.3789 20.7564 17.6249 20.7909C16.8097 20.828 16.5648 20.836 14.4999 20.836C12.435 20.836 12.1902 20.828 11.375 20.7909C10.621 20.7561 10.2118 20.6301 9.939 20.5243C9.57811 20.3841 9.32033 20.2165 9.04966 19.9459C8.77899 19.6752 8.61143 19.4181 8.47094 19.057C8.36509 18.7847 8.23894 18.3755 8.20462 17.6215C8.16757 16.8063 8.16016 16.5614 8.16016 14.4962C8.16016 12.4311 8.16757 12.1875 8.20462 11.3722C8.2391 10.6182 8.36509 10.209 8.47094 9.93641C8.61111 9.57551 8.77899 9.31773 9.04966 9.04706C9.32033 8.77639 9.57811 8.60884 9.939 8.46835C10.2116 8.36201 10.621 8.23634 11.375 8.2017C12.0884 8.16948 12.3649 8.15981 13.8062 8.1582V8.16014ZM18.6282 9.44515C18.1159 9.44515 17.7002 9.86033 17.7002 10.3728C17.7002 10.8852 18.1159 11.3008 18.6282 11.3008C19.1405 11.3008 19.5562 10.8852 19.5562 10.3728C19.5562 9.8605 19.1405 9.44482 18.6282 9.44482V9.44515ZM10.5304 14.5007C10.5304 12.3075 12.3085 10.5293 14.5017 10.5293C16.6949 10.5293 18.4727 12.3075 18.4727 14.5007C18.4727 16.6939 16.6951 18.4713 14.5019 18.4713C12.3086 18.4713 10.5304 16.6939 10.5304 14.5007Z" /><path d="M14.4997 11.9219C15.9233 11.9219 17.0775 13.0759 17.0775 14.4997C17.0775 15.9233 15.9233 17.0775 14.4997 17.0775C13.0759 17.0775 11.9219 15.9233 11.9219 14.4997C11.9219 13.0759 13.0759 11.9219 14.4997 11.9219Z" /></svg></a>
+                        <a href="#"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M29 14.5C29 22.5081 22.5081 29 14.5 29C6.49187 29 0 22.5081 0 14.5C0 6.49187 6.49187 0 14.5 0C22.5081 0 29 6.49187 29 14.5ZM9.70835 13.1716C8.25583 13.8058 6.76339 14.4575 5.39869 15.2092L5.39859 15.2093C4.68598 15.731 5.63318 16.1 6.52171 16.4462C6.66297 16.5012 6.80275 16.5557 6.93414 16.6101C7.04347 16.6437 7.15467 16.6791 7.26734 16.715C8.25555 17.0299 9.35748 17.3809 10.3169 16.8528C11.8929 15.9475 13.3802 14.9008 14.8663 13.8549C15.3532 13.5123 15.84 13.1697 16.3298 12.8322C16.3527 12.8175 16.3786 12.8007 16.4069 12.7824C16.8241 12.512 17.7624 11.9037 17.4154 12.7418C16.5946 13.6394 15.7155 14.4339 14.8317 15.2327C14.236 15.7711 13.6381 16.3115 13.0545 16.8866C12.5462 17.2996 12.0183 18.1302 12.5875 18.7086C13.8985 19.6263 15.23 20.5219 16.5607 21.4169C16.9937 21.7081 17.4266 21.9993 17.8588 22.2911C18.5911 22.8759 19.7357 22.4029 19.8967 21.4892C19.9683 21.0689 20.0402 20.6486 20.1121 20.2283C20.5094 17.9054 20.9068 15.5818 21.2579 13.2514C21.3056 12.8858 21.3597 12.5203 21.4139 12.1546C21.545 11.2682 21.6763 10.3807 21.7173 9.48959C21.6116 8.60029 20.5334 8.79582 19.9332 8.99579C16.8489 10.1694 13.7953 11.4301 10.7538 12.713C10.4092 12.8656 10.06 13.0181 9.70835 13.1716Z" /></svg></a>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-partners">
+                        <div class="footer-partner"><a href="#" target="_blank"><img src="images/footer-partner-1.png" alt="" /></a></div>
+                        <div class="footer-partner"><a href="#" target="_blank"><img src="images/footer-partner-2.png" alt="" /></a></div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-link"><a href="#">Карта сайта</a></div>
+                        <div class="footer-link"><a href="#">Правила сайта</a></div>
+                        <div class="footer-link"><a href="#">Политика конфиденциальности</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="up-link"><svg width="87" height="87" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M58.8288 70.0587L28.1478 70.0587L12.8074 43.4882L28.1478 16.9177L58.8288 16.9177L74.1693 43.4882L58.8288 70.0587Z" class="up-link-bg" stroke="white" stroke-width="2"/><path d="M53.0001 48.001L43.0001 38.001L33.0001 48.001" stroke="white" stroke-width="3"/></svg></a>
+
+        <script>
+            var pathTemplate = './';
+        </script>
+        <script src="js/fonts.js"></script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/additional-methods.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/air-datepicker/datepicker.min.js"></script>
+        <script src="js/general.js"></script>
+        <script src="js/cabinet.js"></script>
+        <script src="js/cabinet-m.js"></script>
+
+    </body>
+</html>
