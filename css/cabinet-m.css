@@ -402,7 +402,7 @@ h1+.meet-card-data {margin-top:48px}
 .meet-add-step-confirm-row {display:table-row}
 .meet-add-step-confirm-label {display:table-cell; vertical-align:top; color:#7c7c7c; width:305px; padding:13px 0; border-bottom:1px solid #e8e8e8}
 .meet-add-step-confirm-value {display:table-cell; vertical-align:top; padding:13px 0 13px 20px; border-bottom:1px solid #e8e8e8; position:relative}
-.meet-add-step-confirm-value-icon {position:absolute; right:100%; top:50%; transform:translateY(-50%)}
+.meet-add-step-confirm-value img {position:absolute; right:100%; top:50%; transform:translateY(-50%)}
 .meet-add-step-confirm-value a {color:#fce480; text-decoration:none}
 .meet-add-step-confirm-value a:hover {color:#1089bd}
 

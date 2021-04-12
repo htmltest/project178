@@ -11,15 +11,15 @@
                             <div class="manager-table-filter-params-window-col">
                                 <div class="manager-table-filter-params-window-props">
                                     <div class="manager-table-filter-params-window-title">Участие в разделах</div>
-                                    <div class="manager-table-filter-params-window-props-list">
+                                    <div class="manager-table-filter-params-window-props-list manager-table-filter-params-window-props-group">
                                         <div class="form-checkbox">
-                                            <label><input type="checkbox" name="section1" checked="checked" /><span>оптовая торговля</span></label>
+                                            <label><input type="checkbox" name="section1" checked="checked" /><span>Оптовая торговля</span></label>
                                         </div>
                                         <div class="form-checkbox">
-                                            <label><input type="checkbox" name="section2" /><span>производитель</span></label>
+                                            <label><input type="checkbox" name="section2" /><span>Производитель</span></label>
                                         </div>
                                         <div class="form-checkbox">
-                                            <label><input type="checkbox" name="section3" /><span>ритейлер</span></label>
+                                            <label><input type="checkbox" name="section3" /><span>Ритейлер</span></label>
                                         </div>
                                     </div>
                                 </div>
@@ -39,26 +39,41 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="manager-table-filter-params-window-props">
+                                    <div class="manager-table-filter-params-window-title">Количество встреч</div>
+                                    <div class="manager-table-filter-params-window-count-meets">
+                                        <div class="manager-table-filter-params-window-count-meets-from">с</div>
+                                        <div class="manager-table-filter-params-window-count-meets-input"><div class="form-input"><input type="text" name="countFrom" value="1" /></div></div>
+                                        <div class="manager-table-filter-params-window-count-meets-to">по</div>
+                                        <div class="manager-table-filter-params-window-count-meets-input"><div class="form-input"><input type="text" name="countTo" value="3" /></div></div>
+                                    </div>
+                                </div>
+
+                                <div class="manager-table-filter-params-window-props">
+                                    <div class="manager-table-filter-params-window-title">Текстовое поле</div>
+                                    <div class="manager-table-filter-params-window-input"><div class="form-input"><input type="text" name="simpleText" value="просто текст" /></div></div>
+                                </div>
                             </div>
                             <div class="manager-table-filter-params-window-col">
                                 <div class="manager-table-filter-params-window-props">
                                     <div class="manager-table-filter-params-window-title">Уровень доверия</div>
                                     <div class="manager-table-filter-params-window-props-list">
                                         <div class="form-checkbox">
-                                            <label><input type="checkbox" name="trust1" checked="checked" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-1"></div>высокий</span></label>
+                                            <label><input type="checkbox" name="trust1" checked="checked" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-1"></div>Высокий</span></label>
                                         </div>
                                         <div class="form-checkbox">
-                                            <label><input type="checkbox" name="trust2" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-2"></div>средний</span></label>
+                                            <label><input type="checkbox" name="trust2" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-2"></div>Средний</span></label>
                                         </div>
                                         <div class="form-checkbox">
-                                            <label><input type="checkbox" name="trust3" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-3"></div>низкий</span></label>
+                                            <label><input type="checkbox" name="trust3" /><span><div class="manager-table-filter-params-window-props-trust manager-table-filter-params-window-props-trust-3"></div>Низкий</span></label>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="manager-table-filter-params-window-props">
                                     <div class="manager-table-filter-params-window-title">Род деятельности</div>
-                                    <div class="manager-table-filter-params-window-props-list">
+                                    <div class="manager-table-filter-params-window-props-list manager-table-filter-params-window-props-group">
                                         <div class="form-checkbox">
                                             <label><input type="checkbox" name="type1" checked="checked" /><span>Крупносерийное производство</span></label>
                                         </div>
@@ -84,12 +99,74 @@
                                 </div>
 
                                 <div class="manager-table-filter-params-window-props">
-                                    <div class="manager-table-filter-params-window-title">Количество встреч</div>
-                                    <div class="manager-table-filter-params-window-count-meets">
-                                        <div class="manager-table-filter-params-window-count-meets-from">с</div>
-                                        <div class="manager-table-filter-params-window-count-meets-input"><div class="form-input"><input type="text" name="countFrom" value="1" class="filter-count-from" /></div></div>
-                                        <div class="manager-table-filter-params-window-count-meets-to">по</div>
-                                        <div class="manager-table-filter-params-window-count-meets-input"><div class="form-input"><input type="text" name="countTo" value="3" class="filter-count-to" /></div></div>
+                                    <div class="manager-table-filter-params-window-title">Регион</div>
+                                    <div class="form-select form-select-ajax" data-link="ajax/regions.json">
+                                        <select name="region" data-placeholder="Выберите регион">
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="manager-table-filter-params-window-props">
+                                    <div class="manager-table-filter-params-window-title">Категория</div>
+                                    <div class="manager-filter-select">
+                                        <div class="manager-filter-select-current default" data-placeholder="Выберите категорию">Выберите категорию</div>
+                                        <div class="manager-filter-select-list manager-table-filter-params-window-props-group">
+                                            <ul>
+                                                <li><label><input type="checkbox" name="category[]" value="1" /><span><img src="images/catalogue-category-1.svg" alt="" />женская одежда</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="2" /><span><img src="images/catalogue-category-2.svg" alt="" />мужская одежда</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="3" /><span><img src="images/catalogue-category-3.svg" alt="" />детская одежда</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="4" /><span><img src="images/catalogue-category-4.svg" alt="" />верхняя детская одежда</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="5" /><span><img src="images/catalogue-category-5.svg" alt="" />верхняя одежда</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="6" /><span><img src="images/catalogue-category-6.svg" alt="" />школьная форма</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="7" /><span><img src="images/catalogue-category-7.svg" alt="" />джинсовая одежда</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="8" /><span><img src="images/catalogue-category-8.svg" alt="" />для беременных</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="9" /><span><img src="images/catalogue-category-9.svg" alt="" />головные уборы</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="10" /><span><img src="images/catalogue-category-10.svg" alt="" />домашняя одежда и текстиль</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="11" /><span><img src="images/catalogue-category-11.svg" alt="" />большие размеры</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="12" /><span><img src="images/catalogue-category-12.svg" alt="" />купальники</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="13" /><span><img src="images/catalogue-category-13.svg" alt="" />вязаный трикотаж</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="14" /><span><img src="images/catalogue-category-14.svg" alt="" />кроеный трикотаж</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="15" /><span><img src="images/catalogue-category-15.svg" alt="" />нижнее белье</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="16" /><span><img src="images/catalogue-category-16.svg" alt="" />термобелье</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="17" /><span><img src="images/catalogue-category-17.svg" alt="" />спортивная одежда</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="18" /><span><img src="images/catalogue-category-18.svg" alt="" />носочно-чулочная продукция</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="19" /><span><img src="images/catalogue-category-19.svg" alt="" />униформа и спецодежда</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="20" /><span><img src="images/catalogue-category-20.svg" alt="" />сумки и аксессуары</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="21" /><span><img src="images/catalogue-category-21.svg" alt="" />ткань</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="22" /><span><img src="images/catalogue-category-22.svg" alt="" />медицинские изделия</span></label></li>
+                                                <li><label><input type="checkbox" name="category[]" value="23" /><span><img src="images/catalogue-category-23.svg" alt="" />СИЗ</span></label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="manager-table-filter-params-window-props">
+                                    <div class="manager-table-filter-params-window-title">Сырье</div>
+                                    <div class="manager-filter-select">
+                                        <div class="manager-filter-select-current default" data-placeholder="Выберите категорию">Выберите сырье</div>
+                                        <div class="manager-filter-select-list manager-filter-select-list-source manager-table-filter-params-window-props-group">
+                                            <ul>
+                                                <li><label><input type="checkbox" name="source[]" value="1" /><span>Собственное</span></label></li>
+                                                <li><label><input type="checkbox" name="source[]" value="2" /><span>Давальческое</span></label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="manager-table-filter-params-window-props">
+                                    <div class="manager-table-filter-params-window-title">Посетитель</div>
+                                    <div class="manager-filter-select">
+                                        <div class="manager-filter-select-current default" data-placeholder="Выберите посетителя">Выберите посетителя</div>
+                                        <div class="manager-filter-select-list manager-filter-select-list-company manager-table-filter-params-window-props-group">
+                                            <ul>
+                                                <li><label><input type="checkbox" name="company[]" value="1" /><span><img src="files/catalogue-logo-02.png" alt="" />Акос тэкс</span></label></li>
+                                                <li><label><input type="checkbox" name="company[]" value="2" /><span><img src="files/catalogue-logo-04.png" alt="" />Bonadi</span></label></li>
+                                                <li><label><input type="checkbox" name="company[]" value="3" /><span><img src="files/catalogue-logo-02.png" alt="" />Акос тэкс</span></label></li>
+                                                <li><label><input type="checkbox" name="company[]" value="4" /><span><img src="files/catalogue-logo-04.png" alt="" />Bonadi</span></label></li>
+                                                <li><label><input type="checkbox" name="company[]" value="5" /><span><img src="files/catalogue-logo-02.png" alt="" />Акос тэкс</span></label></li>
+                                                <li><label><input type="checkbox" name="company[]" value="6" /><span><img src="files/catalogue-logo-04.png" alt="" />Bonadi</span></label></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
