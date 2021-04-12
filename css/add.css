@@ -4,7 +4,7 @@
 
 .window-online-success-back {margin:-3px 0 0 0; font-size:14px; line-height:21px; font-weight:300}
 .window-online-success-back a {display:inline-block; vertical-align:top; text-decoration:none; color:#272727; padding:0 0 0 25px; position:relative}
-.window-online-success-back a::before {content:""; display:block; position:absolute; left:0; top:50%; width:15px; height:6px; background:url(/local/templates/offline-personal/css/../images/window-online-success-back.svg) no-repeat; transition:all 0.2s; margin-top:-3px}
+.window-online-success-back a::before {content:""; display:block; position:absolute; left:0; top:50%; width:15px; height:6px; background:url(../images/window-online-success-back.svg) no-repeat; transition:all 0.2s; margin-top:-3px}
 .window-online-success-back a:hover::before {left:-10px; width:25px}
 .window-catalogue-info-value.window-catalogue-info-country img{height: 19px; width: 28px; top: 0px}
 .faq-item-title.faq-item-no-answer a::after {display:none;}
@@ -74,7 +74,7 @@
 }
 
 /* блок с информацие об интересах */
-.catalogue-info {margin:17px 0 30px 0; border:1px solid #e2e2e2; position:relative; background:#fff url(/local/templates/offline-personal/css/../images/catalogue-info.svg) no-repeat 20px 21px}
+.catalogue-info {margin:17px 0 30px 0; border:1px solid #e2e2e2; position:relative; background:#fff url(../images/catalogue-info.svg) no-repeat 20px 21px}
 .catalogue-info-mobile {display:none}
 .catalogue-info::before {content:""; display:block; position:absolute; left:10px; top:10px; right:-11px; bottom:-11px; background:#ecf6fb; z-index:-1}
 .catalogue-info::after {content:""; display:block; clear:both}
@@ -120,7 +120,7 @@
 @media screen and (max-width:1170px) {
     .back-mobile {display:block; padding: 0px; line-height:35px; margin-top: 27px}
     .back-mobile a {display:inline-block; vertical-align:top; color:#000; padding:0 0 0 41px; position:relative; text-decoration: none; background: none; width: auto; top: 0}
-    .back-mobile a::before {content:""; display:block; position:absolute; left:0; top:0; width:35px; height:35px; background: rgba(203, 203, 203, 0.22) 14px 11px url(/local/templates/offline-personal/css/../images/back-mobile.svg) no-repeat}
+    .back-mobile a::before {content:""; display:block; position:absolute; left:0; top:0; width:35px; height:35px; background: rgba(203, 203, 203, 0.22) 14px 11px url(../images/back-mobile.svg) no-repeat}
 }
 
 /* Контакты менеджеров для 404 */

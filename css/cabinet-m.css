@@ -129,7 +129,7 @@ h1+.meet-card-data {margin-top:48px}
 .meet-card-data-header h3 {float:left}
 .meet-card-data-header-link {float:right; font-size:14px; line-height:21px; padding:8px 0 0 0}
 .meet-card-data-header-link a {color:#272727; text-decoration:none}
-.meet-card-data-header-link a::after {content:""; display:inline-block; vertical-align:middle; margin:-2px 0 0 5px; width:15px; height:6px; background:url(/local/templates/offline-personal/css/../images/meet-card-data-header-link.svg) no-repeat right top; transition:all 0.2s}
+.meet-card-data-header-link a::after {content:""; display:inline-block; vertical-align:middle; margin:-2px 0 0 5px; width:15px; height:6px; background:url(../images/meet-card-data-header-link.svg) no-repeat right top; transition:all 0.2s}
 .meet-card-data-header-link a:hover::after {width:25px; margin-right:-10px}
 .meet-card-data-container {border-bottom:1px solid #e8e8e8}
 .meet-card-data-props {padding:0 0 15px 0}
@@ -185,7 +185,7 @@ h1+.meet-card-data {margin-top:48px}
 .window-lkm .window-title span {display:inline-block; vertical-align:middle; margin:0 0 0 40px; position:relative; font-weight:300; font-size:16px; line-height:24px; color:#403f3f}
 .window-lkm .window-title span::before {content:""; display:block; position:absolute; left:-18px; top:50%; width:1px; height:13px; margin-top:-6.5px; background:#c4c4c4}
 .window-lkm .window-title a {margin:4px 0 0 18px; display:inline-block; vertical-align:middle; color:#272727; text-decoration:none; font-weight:300; font-size:14px; line-height:21px}
-.window-lkm .window-title a::after {content:""; display:inline-block; vertical-align:middle; margin:-2px 0 0 5px; width:15px; height:6px; background:url(/local/templates/offline-personal/css/../images/meet-card-data-header-link.svg) no-repeat right top; transition:all 0.2s}
+.window-lkm .window-title a::after {content:""; display:inline-block; vertical-align:middle; margin:-2px 0 0 5px; width:15px; height:6px; background:url(../images/meet-card-data-header-link.svg) no-repeat right top; transition:all 0.2s}
 .window-lkm .window-title a:hover::after {width:25px; margin-right:-10px}
 
 .window-lkm-container {padding:30px 40px 57px 40px}
@@ -263,7 +263,7 @@ h1+.meet-card-data {margin-top:48px}
 .window-meet-add-exponent .window-body {position:relative; z-index:1}
 
 .lkm-exponent-add-wrapper.loading {position:relative}
-.lkm-exponent-add-wrapper.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(255, 255, 255, 0.5) url(/local/templates/offline-personal/css/../images/loading.gif) no-repeat center; z-index:2}
+.lkm-exponent-add-wrapper.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(255, 255, 255, 0.5) url(../images/loading.gif) no-repeat center; z-index:2}
 
 .lkm-exponent-add-ctrl .manager-table-filter {width:auto}
 .lkm-exponent-add-ctrl .manager-table-filter::after {display:none}
@@ -295,7 +295,7 @@ h1+.meet-card-data {margin-top:48px}
 .lkm-exponent-add-exponent:hover .lkm-exponent-add-exponent-radiobox {background:rgba(0, 140, 201, 0.04)}
 .lkm-exponent-add-exponent:hover .lkm-exponent-add-exponent-radiobox::after {content:""; display:block; position:absolute; left:0; top:-2px; right:0; bottom:-2px; border-top:2px solid #fce480; border-bottom:2px solid #fce480; pointer-events:none}
 .lkm-exponent-add-exponent input:checked+.lkm-exponent-add-exponent-radiobox::after {content:""; display:block; position:absolute; left:0; top:-2px; right:0; bottom:-2px; border-top:2px solid #fce480; border-bottom:2px solid #fce480; pointer-events:none}
-.lkm-exponent-add-exponent input:checked+.lkm-exponent-add-exponent-radiobox::before {content:""; display:block; width:19px; height:19px; background:url(/local/templates/offline-personal/css/../images/meet-add-company-radiobox.svg) no-repeat}
+.lkm-exponent-add-exponent input:checked+.lkm-exponent-add-exponent-radiobox::before {content:""; display:block; width:19px; height:19px; background:url(../images/meet-add-company-radiobox.svg) no-repeat}
 .lkm-exponent-add-exponent-info {display:table-cell; vertical-align:middle; padding:15px 0; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8; position:relative}
 .lkm-exponent-add-exponent:hover .lkm-exponent-add-exponent-info {background:rgba(0, 140, 201, 0.04)}
 .lkm-exponent-add-exponent:hover .lkm-exponent-add-exponent-radiobox+.lkm-exponent-add-exponent-info::after {content:""; display:block; position:absolute; left:0; top:-2px; right:0; bottom:-2px; border-top:2px solid #fce480; border-bottom:2px solid #fce480; pointer-events:none}
@@ -332,11 +332,11 @@ h1+.meet-card-data {margin-top:48px}
 .window-meet-add-visitor .window-body {position:relative; z-index:1}
 
 .lkm-visitor-add-wrapper.loading {position:relative}
-.lkm-visitor-add-wrapper.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(255, 255, 255, 0.5) url(/local/templates/offline-personal/css/../images/loading.gif) no-repeat center; z-index:2}
+.lkm-visitor-add-wrapper.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(255, 255, 255, 0.5) url(../images/loading.gif) no-repeat center; z-index:2}
 
 .meet-add-form {max-width:1030px}
 .meet-add-form.loading {position:relative}
-.meet-add-form.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(255, 255, 255, 0.5) url(/local/templates/offline-personal/css/../images/loading.gif) no-repeat center; z-index:2}
+.meet-add-form.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(255, 255, 255, 0.5) url(../images/loading.gif) no-repeat center; z-index:2}
 
 .lkm-visitor-add-ctrl .manager-table-filter {width:auto}
 .lkm-visitor-add-ctrl .manager-table-filter::after {display:none}
@@ -367,7 +367,7 @@ h1+.meet-card-data {margin-top:48px}
 .lkm-visitor-add-visitor:hover .lkm-visitor-add-visitor-radiobox {background:rgba(0, 140, 201, 0.04)}
 .lkm-visitor-add-visitor:hover .lkm-visitor-add-visitor-radiobox::after {content:""; display:block; position:absolute; left:0; top:-2px; right:0; bottom:-2px; border-top:2px solid #fce480; border-bottom:2px solid #fce480; pointer-events:none}
 .lkm-visitor-add-visitor input:checked+.lkm-visitor-add-visitor-radiobox::after {content:""; display:block; position:absolute; left:0; top:-2px; right:0; bottom:-2px; border-top:2px solid #fce480; border-bottom:2px solid #fce480; pointer-events:none}
-.lkm-visitor-add-visitor input:checked+.lkm-visitor-add-visitor-radiobox::before {content:""; display:block; width:19px; height:19px; background:url(/local/templates/offline-personal/css/../images/meet-add-company-radiobox.svg) no-repeat}
+.lkm-visitor-add-visitor input:checked+.lkm-visitor-add-visitor-radiobox::before {content:""; display:block; width:19px; height:19px; background:url(../images/meet-add-company-radiobox.svg) no-repeat}
 .lkm-visitor-add-visitor-info {display:table-cell; vertical-align:top; padding:15px 0; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8; position:relative; white-space:nowrap}
 .lkm-visitor-add-visitor:hover .lkm-visitor-add-visitor-info {background:rgba(0, 140, 201, 0.04)}
 .lkm-visitor-add-visitor:hover .lkm-visitor-add-visitor-radiobox+.lkm-visitor-add-visitor-info::after {content:""; display:block; position:absolute; left:0; top:-2px; right:0; bottom:-2px; border-top:2px solid #fce480; border-bottom:2px solid #fce480; pointer-events:none}
@@ -445,7 +445,7 @@ h1+.meet-card-data {margin-top:48px}
 .comment-item-link::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:#d9eef7; opacity:0; transition:all 0.2s; z-index:-1}
 .comment-item-link:hover::after {opacity:0.5}
 .comment-item.open .comment-item-link:hover::after {opacity:0}
-.comment-item-link::before {content:""; display:block; position:absolute; right:40px; top:29px; width:16px; height:16px; background:url(/local/templates/offline-personal/css/../images/faq-item-title.svg) no-repeat; transition:all 0.2s}
+.comment-item-link::before {content:""; display:block; position:absolute; right:40px; top:29px; width:16px; height:16px; background:url(../images/faq-item-title.svg) no-repeat; transition:all 0.2s}
 .comment-item.open .comment-item-link::before {transform:rotate(-45deg)}
 .comment-item-title {padding:11px 0 0 0}
 .comment-item-title::after {content:""; display:block; clear:both}
@@ -466,7 +466,7 @@ h1+.meet-card-data {margin-top:48px}
 .delegate-card-info-company-city {display:inline; margin:0 0 0 5px}
 .delegate-card-info-company-btn {display:inline; margin:0 0 0 25px; font-size:14px; line-height:21px}
 .delegate-card-info-company-btn a {color:#272727; text-decoration:none}
-.delegate-card-info-company-btn a::after {content:""; display:inline-block; vertical-align:middle; margin:-2px 0 0 5px; width:15px; height:6px; background:url(/local/templates/offline-personal/css/../images/meet-card-data-header-link.svg) no-repeat right top; transition:all 0.2s}
+.delegate-card-info-company-btn a::after {content:""; display:inline-block; vertical-align:middle; margin:-2px 0 0 5px; width:15px; height:6px; background:url(../images/meet-card-data-header-link.svg) no-repeat right top; transition:all 0.2s}
 .delegate-card-info-company-btn a:hover::after {width:25px; margin-right:-10px}
 
 .delegate-editor {display:inline-block; vertical-align:middle; margin:-2px 0 0 4px; padding:0 4px; font-size:12px; font-weight:normal; line-height:15px; height:15px; font-style:normal; background:#de4c55; color:#fff}
@@ -504,4 +504,4 @@ h1+.meet-card-data {margin-top:48px}
 
 .window-schedule {width:627px}
 
-.manager-table-cell-meet-cell .dashboard-zone-item-status.loading span {background-image:url(/local/templates/offline-personal/css/../images/loading.gif); background-position:center; background-repeat:no-repeat; background-size:25px 25px}
+.manager-table-cell-meet-cell .dashboard-zone-item-status.loading span {background-image:url(../images/loading.gif); background-position:center; background-repeat:no-repeat; background-size:25px 25px}
