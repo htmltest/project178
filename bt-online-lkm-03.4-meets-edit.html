@@ -263,12 +263,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="window-online-communication">
-                                        <h3>Данные для связи</h3>
-                                        <div class="form-input"><span>Данные для связи</span><input type="text" name="communication" value="" class="required" /></div>
-                                        <div class="form-input"><span>Описание</span><textarea name="message" cols="5" rows="3"></textarea></div>
-                                    </div>
-
                                     <!-- meet add step 1 -->
                                     <div class="meet-add-step-1">
                                         <div class="meet-card-data">
@@ -568,26 +562,25 @@
                                             </div>
                                         </div>
 
-                                        <div class="window-online-type">
-                                            <h3>Выбор способа связи <span class="error">Не выбран способ связи</span></h3>
-                                            <div class="window-online-date-text">Эти виды связи предпочтительны для<br> представителя фабрики. Выберите удобный вам</div>
-                                            <div class="form-radio">
-                                                <label><input type="radio" name="type" value="zoom" class="required" checked="checked"><span><img src="images/window-online-zoom.svg" alt="">Zoom</span></label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <label><input type="radio" name="type" value="skype" class="required"><span><img src="images/window-online-skype.svg" alt="">Skype</span></label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <label><input type="radio" name="type" value="whatsapp" class="required"><span><img src="images/window-online-whatsapp.svg" alt="">WhatsApp</span></label>
-                                            </div>
-                                        </div>
-
                                         <div class="meet-add-submit"><a href="#" class="btn meet-add-submit-link">Редактировать встречу</a></div>
                                     </div>
                                     <!-- meet add step 2 END -->
 
                                     <!-- meet add step 3 -->
                                     <div class="meet-add-step-3" data-url="jsonResponse/getUserActiveConfirmEdit/index.html">
+                                        <h3>Данные встречи</h3>
+                                        <div class="meet-add-step-confirm">
+                                            <div class="meet-add-step-confirm-row">
+                                                <div class="meet-add-step-confirm-label">Дата</div>
+                                                <div class="meet-add-step-confirm-value" id="meet-add-step-3-date"></div>
+                                            </div>
+
+                                            <div class="meet-add-step-confirm-row">
+                                                <div class="meet-add-step-confirm-label">Время</div>
+                                                <div class="meet-add-step-confirm-value" id="meet-add-step-3-time"></div>
+                                            </div>
+                                        </div>
+                                        <div class="meet-add-confirm-ctrl"><a href="#" class="meet-add-back-link">Назад</a><a href="#" class="btn meet-add-confirm-link">добавить встречу</a></div>
                                     </div>
                                     <!-- meet add step 3 END -->
                                 </form>
