@@ -170,6 +170,10 @@ $(document).ready(function() {
 		filterUpdate();
 	});
 
+    $('body').on('click', '.manager-table-filter-params-window-input .form-input-clear', function(e) {
+        $(this).parent().find('input').trigger('change');
+    });
+
 	$('body').on('change', '.manager-table-filter .form-select select', function(e) {
 		filterUpdate();
 	});

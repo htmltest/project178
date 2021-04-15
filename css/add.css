@@ -40,7 +40,7 @@
 	.manager-table-head .arrow{margin-top: -1px; font-size: 12px; line-height: 12px}
 	.manager-table-head a:hover{text-decoration: underline;color: #ccab25;}
 	
-	.lkm-exponent-add-exponent-text .manager-table-participant-text span {margin-top: -20px}
+/*	.lkm-exponent-add-exponent-text .manager-table-participant-text span {margin-top: -20px}*/
 	.lkm-visitor-add-visitor-info { z-index: 1000 }
 	/* .manager-table-participant-text > span {margin-right: 10px;} попап выбора экспонента - отступ от брендов */
 	/* .lkm-exponent-add-exponent-category img {height: 15px;} попап выбора экспонента - размер иконок категорий */

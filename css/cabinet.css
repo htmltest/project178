@@ -1095,8 +1095,9 @@ h1 .dashboard-zone-item-status-inner {margin:5px 0 0 10px}
     .manager-table-filter-params-window-title .manager-table-filter-params-window-title-values {display:inline; font-size:18px; line-height:27px; font-weight:300; margin:0 0 0 9px}
 }
 
-.manager-table-filter-params-window-props-list {margin:10px 0 0 0}
+.manager-table-filter-params-window-props-list {margin:4px 0 0 0}
 .manager-table-filter-params-window-props-list .form-checkbox {margin:8px 0 0 0; font-size:13px; line-height:20px}
+.manager-table-filter-params-window-props-list .form-checkbox:first-child {margin:0}
 .manager-table-filter-params-window-props-list .form-checkbox em {font-style:normal; font-weight:300}
 .manager-table-filter-params-window-props-list .form-checkbox span {padding:0 0 0 24px}
 .manager-table-filter-params-window-props-list .form-checkbox span::before {width:16px; height:16px; top:1px}
@@ -1138,7 +1139,7 @@ h1 .dashboard-zone-item-status-inner {margin:5px 0 0 10px}
 .window+.select2-container .select2-results__option[aria-selected="true"]::after {opacity:0}
 .window+.select2-container .select2-search--dropdown .select2-search__field {font-size:13px; line-height:20px; padding:5px 14px 3px 14px; height:30px}
 
-.manager-table-filter-params-window-count-meets {margin:9px 0 0 0; min-width:160px}
+.manager-table-filter-params-window-count-meets {margin:4px 0 0 0; min-width:160px}
 .manager-table-filter-params-window-count-meets::after {content:""; display:block; clear:both}
 .manager-table-filter-params-window-count-meets-from {float:left; margin:0 9px 0 0; font-size:14px; font-weight:normal; line-height:30px; color:#404040}
 .manager-table-filter-params-window-count-meets-to {float:left; margin:0 9px 0 19px; font-size:14px; font-weight:normal; line-height:30px; color:#404040}
@@ -1146,10 +1147,11 @@ h1 .dashboard-zone-item-status-inner {margin:5px 0 0 10px}
 .manager-table-filter-params-window-count-meets-input .form-input {margin:0}
 .manager-table-filter-params-window-count-meets-input .form-input input {height:30px; font-size:13px; line-height:20px; color:#404040; text-align:center; padding:7px 0 3px 0}
 
+.manager-table-filter-params-window-input {margin:4px 0 0 0}
 .manager-table-filter-params-window-input .form-input {margin:0}
-.manager-table-filter-params-window-input .form-input input {height:30px; font-size:13px; line-height:20px; color:#404040; padding:6px 10px 4px 10px}
+.manager-table-filter-params-window-input .form-input input {height:30px; font-size:13px; line-height:20px; color:#404040; padding:6px 20px 4px 10px}
 
-.manager-filter-select {margin:4px 0 0 0; position:relative; max-width:249px}
+.manager-filter-select {margin:4px 0 0 0; position:relative; width:249px}
 .manager-filter-select.open {z-index:99}
 .manager-filter-select-current {height:30px; border:1px solid #d9d9d9; cursor:pointer; position:relative; background:#fff; z-index:2; padding:0 30px 0 8px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:13px; line-height:30px; font-weight:normal; color:#000; border-radius:1px}
 .manager-filter-select.open .manager-filter-select-current {border-color:#d6ab2e; border-radius:1px 1px 0 0}
@@ -1680,9 +1682,9 @@ h1 .dashboard-zone-item-status-inner {margin:5px 0 0 10px}
 .window-online-time-list::after {content:""; display:block; clear:both}
 .window-online-time-list label {display:block; float:left; margin:16px 10px 0 0; width:100px; height:40px; cursor:pointer}
 .window-online-time-list label input {display:none}
-.window-online-time-list label span {display:block; position:relative; height:40px; background:#d9eef7; text-align:center; line-height:40px; color:#171717; font-weight:normal; font-size:16px; line-height:40px; border-radius:2px; transition:all 0.2s}
+.window-online-time-list label span {display:block; position:relative; height:40px; background:#fef7d9; text-align:center; line-height:40px; color:#171717; font-weight:normal; font-size:16px; line-height:40px; border-radius:2px; transition:all 0.2s}
 .window-online-time-list label input:disabled+span {background:#ececec; color:#c4c4c4; cursor:default}
-.window-online-time-list label input:checked+span {background:#fce480; color:#fff}
+.window-online-time-list label input:checked+span {background:#fce480; color:#000}
 
 .window-online-type {margin:30px 0 0 0; border-top:1px solid #e3e3e3; padding:26px 0 0 0; text-align:left}
 .window-online-type h3 {margin:0}

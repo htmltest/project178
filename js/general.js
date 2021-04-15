@@ -20,9 +20,23 @@ $(document).ready(function() {
 		}
 	});
 
+	$('body').on('keyup', '.form-input input, .form-input textarea', function() {
+		$(this).parent().removeClass('focus');
+		if ($(this).val() != '') {
+			$(this).parent().addClass('full');
+		} else {
+			$(this).parent().removeClass('full');
+		}
+	});
+
 	$('body').on('input', '.form-input textarea', function() {
 		this.style.height = '242px';
 		this.style.height = (this.scrollHeight) + 'px';
+	});
+
+	$('body').on('click', '.form-input-clear', function(e) {
+        $(this).parent().find('input').val('').trigger('blur');
+        e.preventDefault();
 	});
 
 	$('body').on('change', '.form-file input', function() {
@@ -633,6 +647,7 @@ function initForm(curForm) {
 			};
 			options['minimumInputLength'] = 3;
 			options['placeholder'] = curSelect.parent().attr('data-placeholder');
+			options['allowClear'] = true;
 		}
 
 		curSelect.select2(options);

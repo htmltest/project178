@@ -169,6 +169,10 @@ blockquote::before {content:""; display:block; width:58px; height:49px; position
 .form-input textarea.error {border-color:#df0e0e}
 label.error {display:block; font-size:13px; line-height:19px; color:#df0e0e; margin:8px 0 0 0; font-weight:normal}
 
+.form-input-clear {display:none; position:absolute; right:5px; top:50%; margin-top:-8px; width:16px; height:16px; background:#fef7d9 url(../images/btn-delete.svg) no-repeat center; background-size:7px 7px; border-radius:50%}
+.form-input-clear:hover {background-color:#ffdd50}
+.form-input.full .form-input-clear {display:block}
+
 @media screen and (max-width:1169px) {
 	.form-input span {left:20px; top:20px; font-size:20px; line-height:30px; color:#666}
 	.form-input span em {color:#ff143e}

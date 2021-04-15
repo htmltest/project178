@@ -20,6 +20,14 @@ $(document).ready(function() {
         lkmMeetAddFilterUpdate();
     });
 
+    $('body').on('change', '.lkm-exponent-add-wrapper .support-search-window-input input', function(e) {
+        lkmMeetAddFilterUpdate();
+    });
+
+    $('body').on('keyup', '.lkm-exponent-add-wrapper .support-search-window-input input', function(e) {
+        lkmMeetAddFilterUpdate();
+    });
+
     $('body').on('change', '.lkm-exponent-add-wrapper .manager-table-filter .form-select select', function(e) {
         lkmMeetAddFilterUpdate();
     });
@@ -161,6 +169,14 @@ $(document).ready(function() {
     });
 
     $('body').on('keyup', '.lkm-visitor-add-wrapper .manager-table-filter-params-window-input .form-input input', function(e) {
+        lkmMeetAddFilterUpdateVisitor();
+    });
+
+    $('body').on('change', '.lkm-visitor-add-wrapper .support-search-window-input input', function(e) {
+        lkmMeetAddFilterUpdateVisitor();
+    });
+
+    $('body').on('keyup', '.lkm-visitor-add-wrapper .support-search-window-input input', function(e) {
         lkmMeetAddFilterUpdateVisitor();
     });
 
@@ -400,7 +416,7 @@ $(window).on('load resize', function() {
 });
 
 function lkmMeetAddFilterInit() {
-	$('.lkm-exponent-add-wrapper .support-search-window form').each(function() {
+	$('.lkm-exponent-add-wrapper form').each(function() {
 		var curForm = $(this);
 		var validator = curForm.validate();
 		validator.destroy();
@@ -427,7 +443,7 @@ function lkmMeetAddFilterInit() {
 }
 
 function lkmMeetAddFilterInitVisitor() {
-	$('.lkm-visitor-add-wrapper .support-search-window form').each(function() {
+	$('.lkm-visitor-add-wrapper form').each(function() {
 		var curForm = $(this);
 		var validator = curForm.validate();
 		validator.destroy();
@@ -460,7 +476,7 @@ function lkmMeetAddFilterUpdate() {
 	$('.lkm-exponent-add-wrapper').addClass('loading');
 	$('.lkm-exponent-add-wrapper .message').remove();
 
-    var curForm = $('.lkm-exponent-add-wrapper .manager-table-filter-params-window form');
+    var curForm = $('.lkm-exponent-add-wrapper form');
     var curData = curForm.serialize();
     if ($('.lkm-exponent-add-wrapper .manager-table-head a.active').length > 0) {
         if (curData != '') {
@@ -588,7 +604,7 @@ function lkmMeetAddFilterUpdateVisitor() {
 	$('.lkm-visitor-add-wrapper').addClass('loading');
 	$('.lkm-visitor-add-wrapper .message').remove();
 
-    var curForm = $('.lkm-visitor-add-wrapper .manager-table-filter-params-window form');
+    var curForm = $('.lkm-visitor-add-wrapper form');
     var curData = curForm.serialize();
     if ($('.lkm-visitor-add-wrapper .manager-table-head a.active').length > 0) {
         if (curData != '') {
