@@ -1529,14 +1529,14 @@ h1 .dashboard-zone-item-status-inner {margin:5px 0 0 10px}
 .meet-add-step {display:inline-block; vertical-align:top; margin:0 0 0 -10px; padding:0 13px 0 0}
 .meet-add-step:first-child {margin:0}
 .meet-add-step-inner {background:#eaeaea; color:#171717}
-.meet-add-step.active .meet-add-step-inner {background:#fce480; color:#fff}
-.meet-add-step.success .meet-add-step-inner {background:#eaf9e2; color:#171717}
+.meet-add-step.active .meet-add-step-inner {background:#fedb76}
+.meet-add-step.success .meet-add-step-inner {background:#eaf9e2}
 .meet-add-step-inner span {display:block; position:relative; padding:0 30px 0 78px; vertical-align:middle; height:58px; font-weight:normal; font-size:18px; line-height:58px; letter-spacing:0}
 .fonts-loaded .meet-add-step-inner span {font-family:FiraSans, sans-serif}
 .meet-add-step-inner span::before {content:""; display:block; position:absolute; left:0; top:0; width:0; height:0; border-left:22px solid #fff; border-top:29px solid transparent; border-bottom:29px solid transparent; transition:all 0.2s}
 .meet-add-step:first-child .meet-add-step-inner span::before {display:none}
 .meet-add-step-inner span::after {content:""; display:block; z-index:1; position:absolute; right:-22px; top:0; width:0; height:0; border-left:22px solid #eaeaea; border-top:29px solid transparent; border-bottom:29px solid transparent; transition:all 0.2s}
-.meet-add-step.active .meet-add-step-inner span::after {border-left-color:#fce480}
+.meet-add-step.active .meet-add-step-inner span::after {border-left-color:#fedb76}
 .meet-add-step.success .meet-add-step-inner span::after {border-left-color:#eaf9e2}
 .navigator-filter-block-menu-all+.navigator-filter-block-menu-item a span {padding-left:54px}
 .meet-add-step-inner strong {display:block; position:absolute; left:40px; top:50%; width:24px; height:24px; margin-top:-12px; background:#fff; border-radius:50%; text-align:center; font-weight:normal; font-size:16px; line-height:24px; color:#171717}
@@ -1689,7 +1689,6 @@ h1 .dashboard-zone-item-status-inner {margin:5px 0 0 10px}
 .window-online-type {margin:30px 0 0 0; border-top:1px solid #e3e3e3; padding:26px 0 0 0; text-align:left}
 .window-online-type h3 {margin:0}
 .window-online-type .form-radio img {display:inline-block; vertical-align:middle; margin:-2px 10px 0 0}
-.window-online-type-detail {display:none}
 
 .window-online-status {margin:30px 0 0 0; border-top:1px solid #e3e3e3; padding:26px 0 0 0; text-align:left}
 .window-online-status:first-child {margin:0; border-top:none; padding:0}

@@ -151,27 +151,6 @@
     .partcipant-contacts-feedback-inner-btn {margin:25px 0 0 0}
 }
 
-/* Для ? */
-.meet-add-confirm {display:table; width:100%}
-.meet-add-confirm-row {display:table-row}
-.meet-add-confirm-label {display:table-cell; vertical-align:top; color:#171717; width:160px; padding:13px 0; font-size: inherit; line-height: inherit}
-.meet-add-confirm-value {display:table-cell; vertical-align:top; padding:13px 0 13px 20px; font-weight:normal; font-size:18px; line-height:27px; color:#000}
-.meet-add-confirm-value-day {font-weight:300; font-size:16px; color:#171717}
-.meet-add-confirm-value-logo {vertical-align:middle; margin-right:17px; height:36px}
-.meet-add-confirm-value-icon {vertical-align:middle; margin:-2px 10px 0 0}
-
-/* Для попапов модерации */
-@media screen and (max-width:1169px) {
-    .meet-add-confirm {border-top:none}
-    .meet-add-confirm-row {border-bottom:none; padding:17px 0 0 0}
-    .meet-add-confirm-label {float:none; font-size:20px; line-height:30px}
-    .meet-add-confirm-value {float:none; width:auto; font-weight:600; font-size:20px; line-height:30px}
-    .meet-add-confirm-value img {position:relative; top:auto; right:auto; transform:none; margin:0 13px 0 0; max-width:126px; vertical-align:middle}
-}
-
-.meet-add-confirm-status {margin:4px 0 0 0; font-weight:normal; font-size:14px; line-height:19px}
-.meet-add-confirm-status-inner {display:inline-block; vertical-align:top; padding:0 10px; color:#1d1d1d; height:19px}
-
 /* Фильтры */
 .ownd-manager-support-filter {
 	width: 400px;
