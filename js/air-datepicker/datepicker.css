@@ -80,11 +80,11 @@
     border-radius: 4px; }
   .datepicker--cell.-selected- {
     border: none;
-    background: rgba(0, 140, 201, 0.35); }
+    background: rgba(252, 228, 128, 0.4); }
     .datepicker--cell.-selected-.-current- {
-      background: rgba(0, 140, 201, 0.35); }
+      background: rgba(252, 228, 128, 0.4); }
     .datepicker--cell.-selected-.-focus- {
-      background: rgba(0, 140, 201, 0.35); }
+      background: rgba(252, 228, 128, 0.4); }
   .datepicker--cell:empty {
     cursor: default; }
 
@@ -98,7 +98,7 @@
   margin: 8px 0 3px; }
 
 .datepicker--day-name {
-  color: #2e9ecf;
+  color: #FF9A19;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +182,7 @@
   transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
-  z-index: 1000; }
+  z-index: 100; }
   .datepicker.-from-top- {
     -webkit-transform: translateY(-8px);
             transform: translateY(-8px); }

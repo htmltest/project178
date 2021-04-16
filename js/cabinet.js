@@ -184,6 +184,9 @@ $(document).ready(function() {
 		if (curField.parents().filter('.form-checkbox').length > 0) {
 			curField.prop('checked', false);
 			curField.trigger('change');
+            if (curField.parents().filter('.manager-table-filter-params-window-props-group').length == 1) {
+                curField.parents().filter('.manager-table-filter-params-window-props-group').find('.form-checkbox input').prop('checked', false).trigger('change');
+            }
 		}
 		if (curField.hasClass('manager-table-filter-params-window-dates')) {
 			curField.find('input').val('');
@@ -196,13 +199,14 @@ $(document).ready(function() {
 		if (curField.parents().filter('.manager-table-filter-params-window-input').length == 1) {
 			curField.val('');
 			curField.trigger('change');
+            curField.parent().removeClass('full');
 		}
 		if (curField.parents().filter('.manager-filter-select-list').length == 1) {
 			curField.parents().filter('.manager-filter-select-list').find('input').prop('checked', false);
 			curField.parents().filter('.manager-filter-select-list').find('input').eq(0).trigger('change');
 		}
 		if (curField.is('select')) {
-			curField.html('');
+			curField.find('option:selected').prop('selected', false);
 			curField.trigger('change');
 		}
 		if (curField.hasClass( 'ownd-filter-select' )) {
@@ -301,7 +305,7 @@ $(document).ready(function() {
 			$('.meet-add-step').eq(curStep).addClass('active');
 			$('.meet-add-content.active').removeClass('active');
 			$('.meet-add-content').eq(curStep).addClass('active');
-			$('html, body').animate({'scrollTop': 0});
+			$('html, body').animate({'scrollTop': $('.meet-add-steps').offset().top - 100});
 			if (curStep == 1) {
 				meetAddTimeUpdate();
 				meetAddConfirmUpdate();
