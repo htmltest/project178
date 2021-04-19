@@ -209,6 +209,10 @@ $(document).ready(function() {
 			curField.find('option:selected').prop('selected', false);
 			curField.trigger('change');
 		}
+		if (curField.parents().filter('.form-select-ajax').length == 1) {
+			curField.html('');
+			curField.trigger('change');
+		}
 		if (curField.hasClass( 'ownd-filter-select' )) {
 			console.log( 'in' );
 			curField.val( 0 );
@@ -856,6 +860,7 @@ function filterUpdate() {
 				newText += curInput.parent().find('span').text();
 			}
 		} else {
+			id++;
 			curInput.attr('data-id', id);
 		}
 	}
@@ -863,7 +868,7 @@ function filterUpdate() {
 		var curSelect = $('.manager-table-filter .form-select').eq(i).find('select');
 		id++;
 		curSelect.attr('data-id', id);
-		if (curSelect.find('option:selected').length > 0) {
+		if (curSelect.find('option:selected').length > 0 && curSelect.find('option:selected').attr('value') != '') {
 			newHTML += '<div class="manager-table-filter-param">' + curSelect.find('option:selected').text() + '<span data-id="' + id + '"><svg width="7" height="7" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L4.5 4.5L8 1" stroke-width="1.2"/><path d="M8 8L4.5 4.5L1 8" stroke-width="1.2"/></svg></span></div>';
 			if (newText != '') {
 				newText += ', ';
@@ -902,6 +907,7 @@ function filterUpdate() {
 				newText += curInput.parent().find('span').text();
 			}
 		} else {
+			id++;
 			curInput.attr('data-id', id);
 		}
 	}
